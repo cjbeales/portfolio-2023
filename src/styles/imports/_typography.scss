@@ -1,0 +1,235 @@
+html {
+  font-family: $font-secondary;
+  font-size: 62.5%;
+}
+
+body,
+span,
+li,
+ol,
+a {
+  font-size: $body-sm;
+  color: $type-secondary;
+  line-height: $line-height-normal;
+  @include screen('desktopAll') {
+    font-size: $body-md;
+  }
+}
+
+a {
+  color: $teal;
+  font-weight: $font-weight-bold;
+}
+
+// Standards
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-primary-bold;
+  line-height: $line-height-dense;
+  margin: $space-24 0;
+  color: $type-primary;
+
+  &:first-of-type {
+    margin: 0 0 $space-24 0;
+
+    &.no--margin {
+      @extend .no--margin;
+    }
+  }
+
+  span {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+  }
+}
+
+
+//---Standardised margins---//
+h1, h2 {
+  @extend .margin--24;
+}
+
+h3, h4, h5 {
+  @extend .margin--16;
+}
+
+//---Sizing / Weight---//
+h1 {
+  font-size: $heading-xl;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 28ch; // Imposed 59 max char limit on 3 lines
+  @include screen('mobileAll') {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: $heading-lg;
+  @include screen('mobileAll') {
+    font-size: $heading-md;
+  }
+}
+
+h3 {
+  font-size: $heading-md;
+  @include screen('mobileAll') {
+    font-size: $heading-sm;
+  }
+}
+
+h4 {
+  font-size: $heading-sm;
+  @include screen('mobileAll') {
+    font-size: $heading-xs;
+  }
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: $body-sm;
+  color: $type-secondary;
+  margin: $space-16 0;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  @include screen('desktopAll') {
+    font-size: $body-md;
+  }
+}
+
+
+/*---Margin Modifiers---*/
+
+h1, h2, h3, h4, h5, span {
+
+  &.no--margin {
+    @extend .no--margin;
+  }
+
+  &.margin--16 {
+    margin: 0 0 $space-16 0;
+  }
+
+  &.margin--24 {
+    margin: 0 0 $space-16 0;
+    @include screen('tablet-and-desktop') {
+      margin: 0 0 $space-24 0;
+    }
+  }
+
+  &.margin--32 {
+    margin: 0 0 $space-24 0;
+    @include screen('tablet-and-desktop') {
+      margin: 0 0 $space-32 0;
+    }
+  }
+}
+
+/*---General Modifiers---*/
+
+.col--primary {
+  color: $type-primary;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.font--primary {
+  font-family: $font-primary;
+}
+
+.weight--bold {
+  font-weight: $font-weight-bold;
+}
+
+.opacity--85 {
+  opacity: 0.85;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no--margin {
+  margin: 0;
+}
+
+.teal {
+  color: $teal;
+}
+
+.error {
+  color: $warning;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.no-line-height {
+  line-height: 1;
+}
+
+.link {
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.mobCentered {
+  @include screen('mobileAll') {
+    text-align: center;
+  }
+}
+
+// --- Sizing Modifiers --- //
+
+.body {
+  &--xl {
+    font-size: $body-xl;
+  }
+
+  &--lg {
+    font-size: $body-lg;
+  }
+
+  &--sm {
+    font-size: $body-xs;
+    @include screen('desktopAll') {
+      font-size: $body-sm;
+    }
+  }
+
+  &--xs {
+    font-size: $body-xs;
+  }
+}
+
+//---Lists---//
+ul.non-styled {
+  list-style: none;
+  padding: 0;
+
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+ol {
+  padding: 0 0 0 20px;
+
+  li, p {
+    margin: 0;
+  }
+}

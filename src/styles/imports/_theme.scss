@@ -1,0 +1,75 @@
+//--- COLOURS---//
+
+// Brand
+$teal: #17a398;
+$tealHov: #208880;
+$navy: #0d2638;
+$tertiary: #315e7c;
+$bodyText: #666;
+
+// Interface
+$disabled: #adadad;
+$grey-16: #d6d6d6;
+$lightGrey-8: #ebebeb;
+$backgroundGrey-4: #f5f5f5;
+
+// Type
+$type-primary: #222;
+$type-secondary: #585858;
+$type-teal: $teal;
+$type-disabled: $disabled;
+
+// Information
+$error: #d13124;
+$warning: #e56b2e;
+$positive: #59a64d;
+
+//--- TYPOGRAPHY ---//
+
+// Typefaces
+$font-primary: 'futura-pt', sans-serif;
+$font-primary-bold: 'futura-pt-bold', sans-serif;
+$font-secondary: 'lato', sans-serif;
+$headings-font-family: $font-primary-bold;
+$font-family-base: $font-secondary;
+
+// Heading sizing
+$heading-xl: 3.8rem;
+$heading-lg: 3rem;
+$heading-md: 2.6rem;
+$heading-sm: 2.2rem;
+$heading-xs: 1.8rem;
+
+// Body sizing
+$body-xl: 2.6rem;
+$body-lg: 2rem;
+$body-md: 1.8rem; //was 16px
+$body-sm: 1.6rem; //was 14px
+$body-xs: 1.4rem; //was 14px
+
+// Type line heights
+$line-height-normal: 160%;
+$line-height-dense: 130%;
+
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-weight-light: 300;
+
+//--- SPACING ---//
+$space-8: 8px;
+$space-16: calc($space-8 * 2); // 16px
+$space-24: calc($space-8 * 3); // 24px
+$space-32: calc($space-8 * 4); // 32px
+$space-48: calc($space-8 * 6); // 48px
+$space-56: calc($space-8 * 7); // 56px
+$space-64: calc($space-8 * 8); // 64px
+$space-80: calc($space-8 * 10); //80px
+$space-96: calc($space-8 * 12); //96px
+
+//--- Radius ---//
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius-lg: 8px;
+
+//--- Layout ---//
+$headerHeightDesktop: 89px;

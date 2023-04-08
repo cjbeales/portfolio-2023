@@ -1,0 +1,53 @@
+@import '../imports/theme';
+@import '../imports/media-queries';
+
+.grid {
+  display: grid;
+  gap: $space-32;
+  justify-content: space-between;
+
+  &_col2 {
+    @extend .grid;
+    grid-template-columns: 1fr;
+
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &_col3 {
+    @extend .grid;
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &_col4 {
+    @extend .grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &_col5 {
+    @extend .grid;
+    grid-template-columns: 1fr;
+    @include screen('tablet') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include screen('desktopAll') {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &__cell {
+    position: relative;
+  }
+}
+
+/* Partially responsive fallback */
+//grid-template-columns: repeat(auto-fill, minmax(calc(10% + 7.5rem), 1fr));
+
+/* Fully responsive version */
+//grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));

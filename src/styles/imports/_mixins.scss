@@ -1,0 +1,13 @@
+@mixin hover() {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin flex--centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

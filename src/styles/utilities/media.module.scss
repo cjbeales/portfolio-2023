@@ -1,0 +1,32 @@
+.mediaContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  video, img, iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__aspect169 {
+    @extend .mediaContainer;
+    padding-top: 56.25%;
+  }
+
+  &__aspect219 {
+    @extend .mediaContainer;
+    padding-top: 42.78%;
+  }
+
+  &__articleSplash {
+    @extend .mediaContainer;
+    padding-top: 21.7%;
+  }
+}
+

@@ -1,0 +1,25 @@
+@import "/styles/imports/media-queries";
+@import "/styles/imports/theme";
+@import "/styles/imports/containers";
+
+.container_infoPanel {
+  @extend .container--copy;
+  margin: 0 auto $space-48 auto;
+  @include screen("desktopAll") {
+    margin: $space-16 auto $space-64 auto;
+  }
+}
+
+.container_paragraph {
+  @extend .container--copy;
+  margin: $space-24 auto;
+  overflow: visible;
+  p {
+    color: $type-primary;
+  }
+}
+
+.container_heading {
+  @extend .container--copy;
+  margin: $space-64 auto $space-32 auto;
+}

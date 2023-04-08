@@ -1,0 +1,45 @@
+@import '../../styles/imports/theme';
+@import '../../styles/imports/mixins';
+@import '../../styles/imports/media-queries';
+
+.container {
+  margin: 0 auto;
+  padding: 0 $space-16;
+  box-sizing: border-box;
+  // overflow: hidden;
+  position: relative;
+
+  @include screen('tablet') {
+    padding: 0 $space-32;
+  }
+
+  // Images
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.fullWidth {
+  @extend .container;
+  max-width: 100%;
+  padding: 0;
+}
+
+.large {
+  @extend .container;
+  max-width: 1440px;
+}
+.standard {
+  @extend .container;
+  max-width: 1200px;
+}
+.narrow {
+  @extend .container;
+  max-width: 960px;
+}
+.copy {
+  @extend .container;
+  max-width: 720px;
+}
