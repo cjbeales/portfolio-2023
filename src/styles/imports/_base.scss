@@ -20,7 +20,7 @@ section {
 }
 
 main {
-  min-height: calc(100vh - $headerHeightDesktop);
+  min-height: calc(100vh - 100px);
 }
 
 .slick-slider {

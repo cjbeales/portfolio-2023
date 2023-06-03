@@ -16,15 +16,9 @@ export const Header = () => {
     return (
         <div className={`${styles.header} ${isMobile ? styles.mobile : ''}`}>
             <Container variant={'large'} className={styles.container}>
-                <div className={styles.logo}>
+                <div className={styles.headerLogo}>
                     <Link href={'/'}>
-                        <Image
-                            priority
-                            src="/vercel.svg"
-                            width={105}
-                            height={24}
-                            alt={'logo'}
-                        />
+                        <img src="/vercel.svg" alt={'logo'} />
                     </Link>
                 </div>
                 <nav>
@@ -32,7 +26,7 @@ export const Header = () => {
                         <div className={styles.close}
                              onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
-                            <FontAwesomeIcon icon={faXmark} size={'lg'}/>
+                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'black'}/>
                         </div>
                     }
                     <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
