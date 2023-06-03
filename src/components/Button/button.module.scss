@@ -1,5 +1,5 @@
-@import 'styles/imports/theme';
-@import 'styles/imports/mixins';
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/mixins";
 .buttonGroup {
   display: flex;
   flex-direction: row;
@@ -39,7 +39,7 @@
   border-color: $teal;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color .3s ease-in-out, border-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .buttonPrimary {
@@ -87,13 +87,13 @@
 
 .smallButton {
   @extend .button;
-  padding: .6em 2.9em;
+  padding: 0.6em 2.9em;
 }
 
 .navButton {
   @extend .buttonPrimary;
   font-size: 1.5rem;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .disabledButton {
