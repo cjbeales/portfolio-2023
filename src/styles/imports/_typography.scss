@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, span {
     @extend .no--margin;
   }
 
+  &.margin--8 {
+    margin: 0 0 $space-8 0;
+  }
+
   &.margin--16 {
     margin: 0 0 $space-16 0;
   }
@@ -218,6 +222,7 @@ h1, h2, h3, h4, h5, span {
 ul.non-styled {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   li {
     a {

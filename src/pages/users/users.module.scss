@@ -1,0 +1,13 @@
+.userGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.user {
+    background: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
