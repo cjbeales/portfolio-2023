@@ -26,12 +26,11 @@
 }
 
 .button {
-  padding: 1em 2em;
+  padding: $space-8 $space-24;
   display: block;
   text-align: center;
   color: white;
   width: fit-content;
-  font-size: 1.8rem;
   font-family: $font-primary;
   border-radius: $radius-sm;
   border-width: 2px;
