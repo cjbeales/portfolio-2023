@@ -1,0 +1,15 @@
+@import "@/styles/imports/theme";
+
+.splitContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+    align-items: center;
+}
+
+.content {
+    padding: $space-16;
+    p {
+        font-size: $body-lg;
+    }
+}

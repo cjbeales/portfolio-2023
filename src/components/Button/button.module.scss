@@ -1,5 +1,5 @@
-@import "/src/styles/imports/theme";
-@import "/src/styles/imports/mixins";
+@import "@/styles/imports/theme";
+@import "@/styles/imports/mixins";
 .buttonGroup {
   display: flex;
   flex-direction: row;
