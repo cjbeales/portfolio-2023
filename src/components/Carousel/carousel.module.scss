@@ -1,6 +1,8 @@
+@import "@/styles/imports/media-queries.scss";
+
 .slide {
     background: #eee;
-    min-height: 400px !important;
+    // min-height: 300px !important;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -12,7 +12,7 @@ export default function Home() {
       <section>
         <SplitContent
           imageSrc='/hong-kong-bg.jpeg'
-          aspectClass={mediaStyles.mediaContainer__aspect1}
+          aspectClass={mediaStyles.mediaContainer__aspect1x1}
           customAspect='85'
         >
           <h2 className='margin--16'>Who we are</h2>

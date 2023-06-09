@@ -14,17 +14,17 @@
     object-fit: cover;
   }
 
-  &__aspect169 {
+  &__aspect16x9 {
     @extend .mediaContainer;
     padding-top: 56.25%;
   }
 
-  &__aspect219 {
+  &__aspect21x9 {
     @extend .mediaContainer;
     padding-top: 42.78%;
   }
 
-  &__aspect1 {
+  &__aspect1x1 {
     @extend .mediaContainer;
     padding-top: 100%;
   }
