@@ -17,10 +17,6 @@
     @include screen("desktop") {
         padding: 0 $space-16;
     }
-
-    p {
-        font-size: $body-lg;
-    }
 }
 
 .image {

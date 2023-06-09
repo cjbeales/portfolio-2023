@@ -11,7 +11,19 @@ a {
   font-size: $body-sm;
   color: $type-secondary;
   line-height: $line-height-normal;
-  @include screen('desktopAll') {
+  @include screen("desktopAll") {
+    font-size: $body-md;
+  }
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: $body-sm;
+  color: $type-secondary;
+  margin: $space-16 0;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  @include screen("desktopAll") {
     font-size: $body-md;
   }
 }
@@ -27,7 +39,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $font-primary-bold;
+  font-family: $font-primary;
   line-height: $line-height-dense;
   margin: $space-24 0;
   color: $type-primary;
@@ -47,65 +59,59 @@ h5 {
   }
 }
 
-
 //---Standardised margins---//
-h1, h2 {
+h1,
+h2 {
   @extend .margin--24;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   @extend .margin--16;
 }
 
 //---Sizing / Weight---//
 h1 {
   font-size: $heading-xl;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 700;
   max-width: 28ch; // Imposed 59 max char limit on 3 lines
-  @include screen('mobileAll') {
+  @include screen("mobileAll") {
     font-size: 3.2rem;
   }
 }
 
 h2 {
-  font-size: $heading-xl;
-  @include screen('mobileAll') {
-    font-size: $heading-lg;
+  font-size: $heading-lg;
+  font-weight: 700;
+  @include screen("mobileAll") {
+    font-size: $heading-md;
   }
 }
 
 h3 {
   font-size: $heading-md;
-  @include screen('mobileAll') {
+  @include screen("mobileAll") {
     font-size: $heading-sm;
   }
 }
 
 h4 {
   font-size: $heading-sm;
-  @include screen('mobileAll') {
+  @include screen("mobileAll") {
     font-size: $heading-xs;
   }
 }
 
-p {
-  font-family: $font-secondary;
-  font-size: $body-sm;
-  color: $type-secondary;
-  margin: $space-16 0;
-  font-weight: $font-weight-normal;
-  line-height: $line-height-normal;
-  @include screen('desktopAll') {
-    font-size: $body-md;
-  }
-}
-
-
 /*---Margin Modifiers---*/
 
-h1, h2, h3, h4, h5, span, p {
-
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p {
   &.no--margin {
     @extend .no--margin;
   }
@@ -120,14 +126,14 @@ h1, h2, h3, h4, h5, span, p {
 
   &.margin--24 {
     margin: 0 0 $space-16 0;
-    @include screen('tablet-and-desktop') {
+    @include screen("tablet-and-desktop") {
       margin: 0 0 $space-24 0;
     }
   }
 
   &.margin--32 {
     margin: 0 0 $space-24 0;
-    @include screen('tablet-and-desktop') {
+    @include screen("tablet-and-desktop") {
       margin: 0 0 $space-32 0;
     }
   }
@@ -194,7 +200,7 @@ h1, h2, h3, h4, h5, span, p {
 }
 
 .mobCentered {
-  @include screen('mobileAll') {
+  @include screen("mobileAll") {
     text-align: center;
   }
 }
@@ -212,7 +218,7 @@ h1, h2, h3, h4, h5, span, p {
 
   &--sm {
     font-size: $body-xs;
-    @include screen('desktopAll') {
+    @include screen("desktopAll") {
       font-size: $body-sm;
     }
   }
@@ -238,7 +244,8 @@ ul.non-styled {
 ol {
   padding: 0 0 0 20px;
 
-  li, p {
+  li,
+  p {
     margin: 0;
   }
 }

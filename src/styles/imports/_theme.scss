@@ -27,23 +27,21 @@ $positive: #59a64d;
 //--- TYPOGRAPHY ---//
 
 // Typefaces
-$font-primary: 'futura-pt', sans-serif;
-$font-primary-bold: 'futura-pt-bold', sans-serif;
+$font-primary: 'Playfair Display', serif;
 $font-secondary: 'lato', sans-serif;
-$headings-font-family: $font-primary-bold;
 $font-family-base: $font-secondary;
 
 // Heading sizing
-$heading-xl: 3.8rem;
-$heading-lg: 3rem;
-$heading-md: 2.6rem;
-$heading-sm: 2.2rem;
+$heading-xl: 6.4rem;
+$heading-lg: 4.8rem;
+$heading-md: 3.8rem;
+$heading-sm: 2.6rem;
 $heading-xs: 1.8rem;
 
 // Body sizing
-$body-xl: 2.6rem;
-$body-lg: 2rem;
-$body-md: 1.8rem; //was 16px
+$body-xl: 2.8rem;
+$body-lg: 2.4rem;
+$body-md: 2rem; //was 16px
 $body-sm: 1.6rem; //was 14px
 $body-xs: 1.4rem; //was 14px
 

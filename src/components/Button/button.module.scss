@@ -32,12 +32,15 @@
   text-align: center;
   color: white;
   width: fit-content;
-  font-family: $font-primary;
+  font-family: $font-secondary;
+  font-size: $body-sm;
+  font-weight: 700;
   border-radius: $radius-sm;
   border-width: 2px;
   border-style: solid;
   border-color: $teal;
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
