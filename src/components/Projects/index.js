@@ -1,25 +1,28 @@
 import React from 'react'
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react' // import from 'keen-slider/react.es' for to get an ES module
-import styles from './projects.module.scss';
+import { ProjectList } from './ProjectList'
+import { Slide } from './Slide'
 
 export const ProjectsSlider = () => {
-    const [sliderRef, instanceRef] = useKeenSlider(
-        {
-            slideChanged() {
-                console.log('slide changed')
-            },
+    const [sliderRef, instanceRef] = useKeenSlider({
+        breakpoints: {
+            "(min-width: 768px)": {
+                slides: { perView: 2.5, spacing: 16 },
+            }
         },
-        [
-            // add plugins here
-        ]
-    )
+        slides: {
+            perView: 1,
+            spacing: 0,
+        },
+
+    })
 
     return (
         <div ref={sliderRef} className="keen-slider">
-            <div className={`keen-slider__slide ${styles.slide}`}>1</div>
-            <div className={`keen-slider__slide ${styles.slide}`}>2</div>
-            <div className={`keen-slider__slide ${styles.slide}`}>3</div>
+            {ProjectList.map((project, idx) => (
+                <Slide key={idx} slideSrc={project.image} />
+            ))}
         </div>
     )
 }
