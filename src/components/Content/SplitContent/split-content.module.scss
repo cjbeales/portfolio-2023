@@ -1,15 +1,30 @@
 @import "@/styles/imports/theme";
+@import "@/styles/imports/media-queries";
 
 .splitContent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 120px;
+    grid-template-columns: 1fr;
+    gap: $space-48;
     align-items: center;
+    @include screen("desktopAll") {
+        grid-template-columns: repeat(2, 1fr);
+        gap: $space-80;
+    }
 }
 
 .content {
-    padding: $space-16;
+    padding: 0 $space-32;
+    @include screen("desktop") {
+        padding: 0 $space-16;
+    }
+
     p {
         font-size: $body-lg;
+    }
+}
+
+.image {
+    @include screen("tablet-and-mobile") {
+        padding: 0 $space-32;
     }
 }

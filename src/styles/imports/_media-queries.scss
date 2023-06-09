@@ -1,17 +1,16 @@
 // Media Queries
 @mixin screen($size) {
-  $ultraWide: '(min-width: 2000px)';
-  $desktop: '(min-width: 1264px)';
-  $desktopAll: '(min-width: 1025px)';
-  $laptop: '(min-width: 1025px) and (max-width: 1445px)';
-  $tablet-and-desktop: '(min-width: 768px)';
-  $smallDesktop: '(min-width: 1025px) and (max-width: 1264px)';
-  $tablet: '(min-width: 768px) and (max-width: 1024px)';
-  $tablet-and-mobile: '(max-width: 1024px)';
-  $phablet: '(min-width: 450px) and (max-width: 768px)';
-  $mobileAll: '(max-width: 767px)';
-  $mobile: '(max-width: 449px)';
-  $smallMobile: '(max-width: 350px)';
+  $ultraWide: "(min-width: 2000px)";
+  $desktop: "(min-width: 1441px)";
+  $desktopAll: "(min-width: 1025px)";
+  $laptop: "(min-width: 1025px) and (max-width: 1445px)";
+  $tablet-and-desktop: "(min-width: 768px)";
+  $tablet: "(min-width: 768px) and (max-width: 1024px)";
+  $tablet-and-mobile: "(max-width: 1024px)";
+  $phablet: "(min-width: 450px) and (max-width: 768px)";
+  $mobileAll: "(max-width: 767px)";
+  $mobile: "(max-width: 449px)";
+  $smallMobile: "(max-width: 350px)";
 
   /*----Primary Queries----*/
   /*desktopAll / tablet-and-desktop / mobileAll*/
@@ -34,10 +33,6 @@
     }
   } @else if $size==tablet-and-desktop {
     @media only screen and #{$tablet-and-desktop} {
-      @content;
-    }
-  } @else if $size==smallDesktop {
-    @media only screen and #{$smallDesktop} {
       @content;
     }
   } @else if $size==tablet {

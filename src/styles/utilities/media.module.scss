@@ -24,6 +24,11 @@
     padding-top: 42.78%;
   }
 
+  &__aspect1 {
+    @extend .mediaContainer;
+    padding-top: 100%;
+  }
+
   &__articleSplash {
     @extend .mediaContainer;
     padding-top: 21.7%;
