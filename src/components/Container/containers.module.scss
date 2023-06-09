@@ -4,13 +4,9 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 $space-32;
+  padding: 0 $space-48;
   box-sizing: border-box;
   position: relative; 
-
-  @include screen('desktop') {
-    padding: 0 $space-16;
-  }
 
   // Images
   img {

@@ -14,8 +14,8 @@
 
 .content {
     padding: 0 $space-32;
-    @include screen("desktop") {
-        padding: 0 $space-16;
+    @include screen("tablet-and-desktop") {
+        padding: 0 $space-48;
     }
 }
 

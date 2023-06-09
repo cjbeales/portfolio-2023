@@ -1,17 +1,6 @@
-import { Inter, Roboto_Mono } from 'next/font/google'
 import { Splash, SplitContent, Button, ProjectsSlider, Container } from '@/components';
 import Layout from '@/components/Layout';
 import mediaStyles from '@/styles/utilities/media.module.scss';
- 
-export const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
- 
-export const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export default function Home() {
   return (
