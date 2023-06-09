@@ -3,3 +3,4 @@ export { Container } from './Container';
 export { Header } from './Header/index'
 export { Splash } from './Splash/index';
 export { SplitContent } from './Content/SplitContent/index';
+export { ProjectsSlider } from './Projects/index';

@@ -1,0 +1,11 @@
+.slide {
+    background: coral;
+    min-height: 250px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(odd) {
+        background: lightgreen;
+    }
+}

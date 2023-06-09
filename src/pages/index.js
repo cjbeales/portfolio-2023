@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Splash, SplitContent, Button } from '@/components';
+import { Splash, SplitContent, Button, ProjectsSlider } from '@/components';
 import Layout from '@/components/Layout';
 import mediaStyles from '@/styles/utilities/media.module.scss';
 
@@ -21,6 +21,10 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a diam quis lectus iaculis auctor.</p>
           <Button label={'View more'} variant='primary' href='/' />
         </SplitContent>
+      </section>
+
+      <section>
+        <ProjectsSlider />
       </section>
     </Layout>
   )
