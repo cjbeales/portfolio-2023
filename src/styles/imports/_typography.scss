@@ -63,13 +63,14 @@ h5 {
 //---Standardised margins---//
 h1,
 h2 {
-  @extend .margin--24;
+  @extend .margin--32;
+  text-transform: uppercase;
 }
 
 h3,
 h4,
 h5 {
-  @extend .margin--16;
+  @extend .margin--24;
 }
 
 //---Sizing / Weight---//
@@ -83,24 +84,24 @@ h1 {
 }
 
 h2 {
-  font-size: $heading-lg;
+  font-size: $heading-xl;
   font-weight: 700;
+  @include screen("mobileAll") {
+    font-size: $heading-lg;
+  }
+}
+
+h3 {
+  font-size: $heading-lg;
   @include screen("mobileAll") {
     font-size: $heading-md;
   }
 }
 
-h3 {
+h4 {
   font-size: $heading-md;
   @include screen("mobileAll") {
     font-size: $heading-sm;
-  }
-}
-
-h4 {
-  font-size: $heading-sm;
-  @include screen("mobileAll") {
-    font-size: $heading-xs;
   }
 }
 
@@ -206,6 +207,10 @@ p {
   font-family: inherit;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
 }
 
 .mobCentered {
