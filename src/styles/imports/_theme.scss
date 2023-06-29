@@ -1,9 +1,9 @@
 //--- COLOURS---//
 
 // Brand
-$teal: #17a398;
-$tealHov: #208880;
-$navy: #0d2638;
+$teal: #00D1FF;
+$navy: #0B192F;
+$darkNavy: #040D1C;
 $tertiary: #315e7c;
 $bodyText: #666;
 
@@ -14,9 +14,7 @@ $lightGrey-8: #ebebeb;
 $backgroundGrey-4: #f5f5f5;
 
 // Type
-$type-primary: #222;
-$type-secondary: #585858;
-$type-teal: $teal;
+$type-primary: #868C96;
 $type-disabled: $disabled;
 
 // Information
@@ -27,19 +25,19 @@ $positive: #59a64d;
 //--- TYPOGRAPHY ---//
 
 // Typefaces
-$font-primary: 'Playfair Display', serif;
-$font-secondary: 'Inter', sans-serif;
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Lato', sans-serif;
 $font-family-base: $font-secondary;
 
 // Heading sizing
-$heading-xl: 6.4rem;
+$heading-xl: 9rem;
 $heading-lg: 4.8rem;
 $heading-md: 3.8rem;
 $heading-sm: 2.6rem;
 $heading-xs: 1.8rem;
 
 // Body sizing
-$body-xl: 2.8rem;
+$body-xl: 3.4rem;
 $body-lg: 2.4rem;
 $body-md: 2rem; //was 16px
 $body-sm: 1.6rem; //was 14px
@@ -55,6 +53,7 @@ $font-weight-light: 300;
 
 //--- SPACING ---//
 $space-8: 8px;
+$space-12: calc($space-8 * 1.5); // 12px
 $space-16: calc($space-8 * 2); // 16px
 $space-24: calc($space-8 * 3); // 24px
 $space-32: calc($space-8 * 4); // 32px
@@ -71,5 +70,5 @@ $radius-md: 4px;
 $radius-lg: 8px;
 
 //--- Layout ---//
-$headerDesktop: 90px;
+$headerDesktop: 124px;
 $headerMobile: 64px;

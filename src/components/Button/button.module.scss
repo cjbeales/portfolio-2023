@@ -26,21 +26,20 @@
 }
 
 .button {
-  padding: $space-8 $space-24;
+  padding: $space-12 $space-48;
   margin-top: $space-32;
   display: block;
   text-align: center;
   color: white;
   width: fit-content;
   font-family: $font-secondary;
-  font-size: $body-sm;
+  font-size: $body-lg;
   font-weight: 700;
   border-radius: $radius-sm;
   border-width: 2px;
   border-style: solid;
   border-color: $teal;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -83,8 +82,7 @@
   border-color: white;
 
   @include hover() {
-    background: white;
-    color: $navy;
+    background: rgba(255,255,255,.2);
   }
 }
 
@@ -94,9 +92,10 @@
 }
 
 .navButton {
-  @extend .buttonPrimary;
-  font-size: 1.5rem;
-  padding: 0.5em;
+  @extend .buttonOutlineWhite;
+  font-size: 2rem;
+  padding: $space-16;
+  margin: 0;
 }
 
 .disabledButton {

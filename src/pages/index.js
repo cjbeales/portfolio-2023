@@ -5,7 +5,7 @@ import mediaStyles from '@/styles/utilities/media.module.scss';
 export default function Home() {
   return (
     <Layout>
-      <Splash backgroundImg='/hong-kong-bg.jpeg' />
+      <Splash />
       <section>
         <SplitContent
           imageSrc='/hong-kong-bg.jpeg'

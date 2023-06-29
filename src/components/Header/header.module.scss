@@ -2,8 +2,7 @@
 @import "/src/styles/imports/media-queries";
 
 .header {
-  background: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: $navy;
   height: $headerDesktop;
 }
 
@@ -21,7 +20,7 @@
 
   img,
   a {
-    height: 32px;
+    height: 60px;
   }
 }
 
@@ -37,9 +36,11 @@
     line-height: 1;
 
     a {
-      color: $type-primary;
+      color: white;
       padding: $space-16 0;
       text-decoration: none;
+      font-family: $font-primary;
+      font-weight: 600;
     }
   }
 }

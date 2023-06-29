@@ -4,12 +4,11 @@ html {
 }
 
 body,
-span,
 li,
 ol,
 a {
   font-size: $body-sm;
-  color: $type-secondary;
+  color: $type-primary;
   line-height: $line-height-normal;
   @include screen("desktopAll") {
     font-size: $body-md;
@@ -19,14 +18,16 @@ a {
 p {
   font-family: $font-secondary;
   font-size: $body-sm;
-  color: $type-secondary;
+  color: $type-primary;
   margin: $space-16 0;
   font-weight: $font-weight-normal;
-  line-height: $line-height-normal;
+  line-height: $line-height-dense;
   @include screen("desktopAll") {
     font-size: $body-md;
   }
 }
+
+
 
 a {
   color: $teal;
@@ -137,6 +138,14 @@ p {
       margin: 0 0 $space-32 0;
     }
   }
+
+  &.margin--64 {
+    margin: 0 0 $space-48 0;
+    @include screen("tablet-and-desktop") {
+      margin: 0 0 $space-64 0;
+    }
+  }
+
 }
 
 /*---General Modifiers---*/
@@ -208,6 +217,7 @@ p {
 // --- Sizing Modifiers --- //
 
 .body {
+  
   &--xl {
     font-size: $body-xl;
   }

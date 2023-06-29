@@ -11,9 +11,9 @@ export const Splash = ({ backgroundImg = '' }) => {
                 <Image src={backgroundImg} fill={true} />
             }
             <Container variant='large' className={styles.wrapper}>
-                <h1 className='margin--8 white'>Homepage</h1>
-                <p className='margin--32 white'>This is the homepage.</p>
-                <Button label={'View more'} variant='primary' href='/' />
+                <h1 className='margin--8 white'>Hi, I'm Connor<span className="teal">.</span></h1>
+                <p className='margin--64 body--xl'>I’m a front end engineer who specializes in modern <span className="teal">clean design</span> and elegant <span className="teal">performance-driven</span> code.</p>
+                <Button label={'View more'} variant='outlineWhite' href='/' />
             </Container>
         </div>
     )

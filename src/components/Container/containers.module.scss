@@ -4,7 +4,7 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 $space-48;
+  padding: 0 $space-24;
   box-sizing: border-box;
   position: relative; 
 
@@ -24,7 +24,7 @@
 
 .large {
   @extend .container;
-  max-width: 1440px;
+  max-width: 1680px;
 }
 .standard {
   @extend .container;

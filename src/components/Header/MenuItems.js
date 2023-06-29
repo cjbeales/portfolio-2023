@@ -1,18 +1,18 @@
 export const headerMenuItems = [
     {
-        title: 'About us',
-        href: '/about-us'
+        title: 'Projects',
+        href: '#projects'
     },
     {
-        title: 'Services',
-        href: '/services'
+        title: 'Skillset',
+        href: '#skillset'
     },
     {
-        title: 'Work',
-        href: '/work'
+        title: 'About me',
+        href: '#aboutMe'
     },
     {
-        title: 'Contact',
-        href: '/contact'
+        title: 'CV',
+        href: '#cv'
     },
 ];

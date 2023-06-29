@@ -1,5 +1,6 @@
-@import '@/styles/imports/mixins';
-@import '@/styles/imports/media-queries';
+@import "@/styles/imports/theme";
+@import "@/styles/imports/mixins";
+@import "@/styles/imports/media-queries";
 
 .splash {
     display: flex;
@@ -7,12 +8,12 @@
     justify-content: center;
     align-items: center;
     height: 400px;
-    background: lightcoral;
+    background: $navy;
     position: relative;
     overflow: hidden;
     z-index: 1;
 
-    @include screen('tablet-and-desktop') {
+    @include screen("tablet-and-desktop") {
         height: 70vh;
     }
 
@@ -36,7 +37,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - $headerDesktop));
     width: 100%;
     z-index: 4;
+
+    p {
+        max-width: 40ch;
+    }
 }

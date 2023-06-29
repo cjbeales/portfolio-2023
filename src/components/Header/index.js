@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import styles from './header.module.scss';
-import Image from "next/image";
 import Link from "next/link";
-import {Container} from "../Container";
+import {Container, Button} from "@/components";
 import {useIsMobile} from "../../hooks";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +17,7 @@ export const Header = () => {
             <Container variant={'large'} className={styles.container}>
                 <div className={styles.headerLogo}>
                     <Link href={'/'}>
-                        <img src="/vercel.svg" alt={'logo'} />
+                        <img src="/logo.svg" alt={'logo'} />
                     </Link>
                 </div>
                 <nav>
@@ -36,12 +35,14 @@ export const Header = () => {
                             </li>
 
                         ))}
+                        <Button label={'Get in touch'} variant={'navButton'} />
                     </ul>
                     {isMobile && isMenuOpen === false &&
                         <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <FontAwesomeIcon icon={faBars}/>
                         </div>
                     }
+                
                 </nav>
             </Container>
         </div>
