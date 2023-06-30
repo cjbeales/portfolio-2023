@@ -27,8 +27,6 @@ p {
   }
 }
 
-
-
 a {
   color: $teal;
   font-weight: $font-weight-bold;
@@ -87,7 +85,7 @@ h2 {
   font-size: $heading-xl;
   font-weight: 700;
   @include screen("tablet-and-mobile") {
-    font-size: $heading-lg;
+    font-size: $heading-md;
   }
 }
 
@@ -153,7 +151,6 @@ p {
       margin: 0 0 $space-64 0;
     }
   }
-
 }
 
 /*---General Modifiers---*/
@@ -229,16 +226,18 @@ p {
 // --- Sizing Modifiers --- //
 
 .body {
-  
   &--xl {
-    @include screen('desktopAll') {
-      font-size: $body-xl;      
+    font-size: $body-xl;
+    @include screen("tablet-and-mobile") {
+      font-size: $body-sm;
     }
-    font-size: $body-sm;
   }
 
   &--lg {
     font-size: $body-lg;
+    @include screen("tablet-and-mobile") {
+      font-size: $body-sm;
+    }
   }
 
   &--sm {

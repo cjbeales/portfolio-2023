@@ -25,3 +25,9 @@ main {
 .slick-slider {
   max-width: 100%;
 }
+
+.mob-hide {
+  @include screen('tablet-and-mobile') {
+    display: none;
+  }
+}

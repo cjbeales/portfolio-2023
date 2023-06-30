@@ -10,13 +10,12 @@ export const About = () => {
             <Container variant='large'>
                 <div className={styles.wrapper}>
                     <div className={styles.heading}>
-                        <h2 className='white'>About me</h2>
-                        <i class="fa-brands fa-html5"></i>
+                        <h2 className='white margin--24'>About me</h2>
                     </div>
                     <div className={styles.content}>
                         <div className={styles.content__intro}>
-                            <h3 className='white'>So, Who am I?</h3>
-                            <p className='body--lg'>I’m a Lead Frontend Developer who specializes in clean design and elegant performance-driven code.</p>
+                            <h3 className='white mob-hide'>So, Who am I?</h3>
+                            <p className='body--lg no--margin'>I’m a Lead Frontend Developer who specializes in clean design and elegant performance-driven code.</p>
                         </div>
                         <div className={styles.skillset}>
                             <div className={styles.skillset__header}>
