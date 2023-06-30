@@ -1,5 +1,9 @@
 @import "/src/styles/imports/theme";
 
+.aboutMe {
+    background: $darkNavy;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -14,26 +18,37 @@
     &__intro {
         margin-bottom: $space-64;
         max-width: 800px;
+        // padding-left: 22px;
     }
 }
 
 .skillset {
-    background: lightblue;
+
+    &__header {
+        // padding-left: 22px;
+    }
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
         gap: $space-64;
+    }
+
+    .columnHeading {
+        // padding-left: 28px;
+        font-weight: 400;
     }
 
     &__column {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, auto);
         gap: $space-48 $space-24;
+        margin-top: $space-24;
     }
 
-    &__block {
-        text-align: center;
+    .languagesColumn {
+        @extend .skillset__column;
+        grid-template-columns: repeat(3, auto);
     }
 
     &__tile {
