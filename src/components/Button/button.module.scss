@@ -45,6 +45,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
+  @include screen("laptop") {
+    font-size: $body-md;
+  }
+
   @include screen("tablet-and-mobile") {
     font-size: $body-sm;
     padding: $space-8 $space-24;
@@ -100,9 +104,14 @@
 
 .navButton {
   @extend .buttonOutlineWhite;
-  font-size: 2rem;
-  padding: $space-16;
+  font-size: $body-sm;
+  padding: $space-8 $space-16;
   margin: 0;
+
+  @include screen("desktop") {
+    padding: $space-16;
+    font-size: $body-md;
+  }
 }
 
 .disabledButton {

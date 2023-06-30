@@ -10,7 +10,7 @@ a {
   font-size: $body-sm;
   color: $type-primary;
   line-height: $line-height-normal;
-  @include screen("desktopAll") {
+  @include screen("desktop") {
     font-size: $body-md;
   }
 }
@@ -73,33 +73,44 @@ h5 {
 
 //---Sizing / Weight---//
 h1 {
-  font-size: $heading-xl;
+  font-size: $heading-xxl;
   font-weight: 700;
   max-width: 28ch; // Imposed 59 max char limit on 3 lines
+  @include screen("laptop") {
+    font-size: $heading-xl;
+  }
   @include screen("tablet-and-mobile") {
     font-size: $heading-md;
   }
 }
 
 h2 {
-  font-size: $heading-xl;
+  font-size: $heading-md;
   font-weight: 700;
-  @include screen("tablet-and-mobile") {
-    font-size: $heading-md;
+  @include screen("laptop") {
+    font-size: $heading-lg;
+  }
+  @include screen("desktop") {
+    font-size: $heading-xl;
   }
 }
 
 h3 {
   font-size: $heading-lg;
-  @include screen("tablet-and-mobile") {
+
+  @include screen("laptop") {
+    font-size: $heading-sm;
+  }
+
+  @include screen("desktop") {
     font-size: $heading-md;
   }
 }
 
 h4 {
-  font-size: $heading-md;
-  @include screen("tablet-and-mobile") {
-    font-size: $heading-sm;
+  font-size: $heading-sm;
+  @include screen("desktop") {
+    font-size: $heading-md;
   }
 }
 
@@ -126,28 +137,28 @@ p {
 
   &.margin--24 {
     margin: 0 0 $space-16 0;
-    @include screen("tablet-and-desktop") {
+    @include screen("desktop") {
       margin: 0 0 $space-24 0;
     }
   }
 
   &.margin--32 {
     margin: 0 0 $space-24 0;
-    @include screen("tablet-and-desktop") {
+    @include screen("desktop") {
       margin: 0 0 $space-32 0;
     }
   }
 
   &.margin--48 {
     margin: 0 0 $space-24 0;
-    @include screen("tablet-and-desktop") {
+    @include screen("desktop") {
       margin: 0 0 $space-48 0;
     }
   }
 
   &.margin--64 {
     margin: 0 0 $space-48 0;
-    @include screen("tablet-and-desktop") {
+    @include screen("desktop") {
       margin: 0 0 $space-64 0;
     }
   }
@@ -228,14 +239,22 @@ p {
 .body {
   &--xl {
     font-size: $body-xl;
-    @include screen("tablet-and-mobile") {
+    @include screen("laptop") {
+      font-size: $body-lg;
+    }
+    @include screen("desktop") {
       font-size: $body-sm;
     }
   }
 
   &--lg {
     font-size: $body-lg;
-    @include screen("tablet-and-mobile") {
+
+    @include screen("laptop") {
+      font-size: $body-md;
+    }
+
+    @include screen("desktop") {
       font-size: $body-sm;
     }
   }

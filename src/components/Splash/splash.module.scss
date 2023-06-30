@@ -13,7 +13,11 @@
     overflow: hidden;
     z-index: 1;
 
-    @include screen("tablet-and-desktop") {
+    @include screen("laptop") {
+        height: calc(100vh - $headerDesktop);
+    }
+
+    @include screen("desktop") {
         height: 70vh;
     }
 

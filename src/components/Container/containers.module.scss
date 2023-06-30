@@ -1,13 +1,16 @@
-@import '/src/styles/imports/theme';
-@import '/src/styles/imports/mixins';
-@import '/src/styles/imports/media-queries';
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/mixins";
+@import "/src/styles/imports/media-queries";
 
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 $space-24;
+  padding: 0 $space-32;
   box-sizing: border-box;
-  position: relative; 
+  position: relative;
+  @include screen("laptop") {
+    padding: 0 $space-64;
+  }
 }
 
 .fullWidth {

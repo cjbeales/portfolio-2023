@@ -1,7 +1,7 @@
 // Media Queries
 @mixin screen($size) {
   $ultraWide: "(min-width: 2000px)";
-  $desktop: "(min-width: 1441px)";
+  $desktop: "(min-width: 1446px)";
   $desktopAll: "(min-width: 1025px)";
   $laptop: "(min-width: 1025px) and (max-width: 1445px)";
   $tablet-and-desktop: "(min-width: 768px)";

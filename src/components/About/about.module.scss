@@ -9,21 +9,25 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @include screen("tablet-and-mobile") {
-        flex-direction: column;
+    flex-direction: column;
+    @include screen("desktop") {
+        flex-direction: row;
     }
 }
 
 .heading {
-    max-width: 30ch;
+    @include screen("desktop") {
+        max-width: 30ch;
+    }
 }
 
 .content {
     &__intro {
-        margin-bottom: $space-64;
+        margin-bottom: $space-48;
         max-width: 800px;
-        @include screen('tablet-and-mobile') {
-            margin-bottom: $space-48;
+
+        @include screen("desktop") {
+            margin-bottom: $space-64;
         }
     }
 }
@@ -47,11 +51,16 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: $space-24 $space-24;
-        margin-top: $space-24;
+        margin-top: $space-16;
         width: fit-content;
-        @include screen('tablet-and-mobile') {
+
+        @include screen("tablet-and-mobile") {
             display: flex;
             flex-wrap: wrap;
+        }
+
+        @include screen("desktop") {
+            margin-top: $space-24;
         }
     }
 

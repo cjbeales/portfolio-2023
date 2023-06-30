@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  padding: $space-96 0;
+  padding: $space-120 0;
 
   &.compact {
     padding: $space-32 0;
@@ -27,7 +27,14 @@ main {
 }
 
 .mob-hide {
-  @include screen('tablet-and-mobile') {
+  @include screen("tablet-and-mobile") {
     display: none;
+  }
+}
+
+.mobAndLaptop-hide {
+  display: none;
+  @include screen("desktop") {
+    display: inherit;
   }
 }

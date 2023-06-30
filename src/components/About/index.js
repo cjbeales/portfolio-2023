@@ -14,7 +14,7 @@ export const About = () => {
                     </div>
                     <div className={styles.content}>
                         <div className={styles.content__intro}>
-                            <h3 className='white mob-hide'>So, Who am I?</h3>
+                            <h3 className='white mobAndLaptop-hide'>So, Who am I?</h3>
                             <p className='body--lg no--margin'>I’m a Lead Frontend Developer who specializes in clean design and elegant performance-driven code.</p>
                         </div>
                         <div className={styles.skillset}>
