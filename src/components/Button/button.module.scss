@@ -1,5 +1,7 @@
 @import "@/styles/imports/theme";
 @import "@/styles/imports/mixins";
+@import "@/styles/imports/media-queries";
+
 .buttonGroup {
   display: flex;
   flex-direction: row;
@@ -42,6 +44,11 @@
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  @include screen("tablet-and-mobile") {
+    font-size: $body-sm;
+    padding: $space-8 $space-24;
+  }
 }
 
 .buttonPrimary {
@@ -82,7 +89,7 @@
   border-color: white;
 
   @include hover() {
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 

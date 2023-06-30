@@ -78,29 +78,29 @@ h1 {
   font-size: $heading-xl;
   font-weight: 700;
   max-width: 28ch; // Imposed 59 max char limit on 3 lines
-  @include screen("mobileAll") {
-    font-size: 3.2rem;
+  @include screen("tablet-and-mobile") {
+    font-size: $heading-md;
   }
 }
 
 h2 {
   font-size: $heading-xl;
   font-weight: 700;
-  @include screen("mobileAll") {
+  @include screen("tablet-and-mobile") {
     font-size: $heading-lg;
   }
 }
 
 h3 {
   font-size: $heading-lg;
-  @include screen("mobileAll") {
+  @include screen("tablet-and-mobile") {
     font-size: $heading-md;
   }
 }
 
 h4 {
   font-size: $heading-md;
-  @include screen("mobileAll") {
+  @include screen("tablet-and-mobile") {
     font-size: $heading-sm;
   }
 }
@@ -137,6 +137,13 @@ p {
     margin: 0 0 $space-24 0;
     @include screen("tablet-and-desktop") {
       margin: 0 0 $space-32 0;
+    }
+  }
+
+  &.margin--48 {
+    margin: 0 0 $space-24 0;
+    @include screen("tablet-and-desktop") {
+      margin: 0 0 $space-48 0;
     }
   }
 
@@ -214,7 +221,7 @@ p {
 }
 
 .mobCentered {
-  @include screen("mobileAll") {
+  @include screen("tablet-and-mobile") {
     text-align: center;
   }
 }
@@ -224,7 +231,10 @@ p {
 .body {
   
   &--xl {
-    font-size: $body-xl;
+    @include screen('desktopAll') {
+      font-size: $body-xl;      
+    }
+    font-size: $body-sm;
   }
 
   &--lg {
