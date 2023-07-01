@@ -1,4 +1,4 @@
-import { Splash, About,Container } from '@/components';
+import { Splash, About, ProjectsSlider } from '@/components';
 import Layout from '@/components/Layout';
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <Layout>
       <Splash />
       <About />
-       
+       <ProjectsSlider />
     </Layout>
   )
 }

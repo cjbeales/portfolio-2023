@@ -18,5 +18,15 @@ export const ProjectList = [
         title: 'Project 4',
         href: '/projects/project-4',
         image: '/projects/screen-4.jpg',
+    },
+    {
+        title: 'Project 5',
+        href: '/projects/project-3',
+        image: '/projects/screen-3.jpg',
+    },
+    {
+        title: 'Project 6',
+        href: '/projects/project-4',
+        image: '/projects/screen-4.jpg',
     }
 ]

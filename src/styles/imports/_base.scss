@@ -38,3 +38,23 @@ main {
     display: inherit;
   }
 }
+
+.slick-list {
+  padding: 0 0 0 20% !important;
+  margin: 0 -$space-16;
+  .slick-slide {
+    margin: 0 $space-16;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// .slick-slide {
+//   margin: 0 27px;
+// }
+
+// /* the parent */
+// .slick-list {
+//   margin: 0 -27px;
+// }

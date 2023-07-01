@@ -1,24 +1,23 @@
 import React from 'react'
 import { ProjectList } from './ProjectList'
-import { Carousel } from '@/components/Carousel'
+import { Container } from '../Container';
+import { Carousel } from '@/components';
+
+var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4.5,
+    arrows: false
+};
 
 export const ProjectsSlider = () => {
-    const settings = {
-        breakpoints: {
-            "(min-width: 768px)": {
-                slides: { perView: 2.5, spacing: 16 },
-            }
-        },
-        slides: {
-            perView: 1,
-            spacing: 0,
-        },
-    }
-
     return (
-        <>
-            <h2>Our recent projects</h2>
-            <Carousel slideSettings={settings} data={ProjectList} />
-        </>
+        <section id="projects">
+            <Container variant='large'>
+                <Carousel carouselSettings={settings} data={ProjectList} />
+            </Container>
+        </section>
+
     )
 }
