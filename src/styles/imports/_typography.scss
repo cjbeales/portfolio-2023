@@ -72,34 +72,33 @@ h5 {
 }
 
 //---Sizing / Weight---//
-h1 {
+h1, h2 {
   font-size: $heading-xxl;
   font-weight: 700;
-  max-width: 28ch; // Imposed 59 max char limit on 3 lines
   @include screen("laptop") {
-    font-size: $heading-xl;
+    font-size: calc($heading-xxl *.85);
   }
   @include screen("tablet-and-mobile") {
     font-size: $heading-md;
   }
 }
 
-h2 {
-  font-size: $heading-md;
-  font-weight: 700;
-  @include screen("laptop") {
-    font-size: $heading-lg;
-  }
-  @include screen("desktop") {
-    font-size: $heading-xl;
-  }
-}
+// h2 {
+//   font-size: $heading-md;
+//   font-weight: 700;
+//   @include screen("laptop") {
+//     font-size: calc($heading-xl *.85);
+//   }
+//   @include screen("desktop") {
+//     font-size: $heading-xl;
+//   }
+// }
 
 h3 {
   font-size: $heading-lg;
 
   @include screen("laptop") {
-    font-size: $heading-sm;
+    font-size: calc($heading-md *.85);
   }
 
   @include screen("desktop") {
@@ -238,24 +237,24 @@ p {
 
 .body {
   &--xl {
-    font-size: $body-xl;
+    font-size: $body-md; 
     @include screen("laptop") {
-      font-size: $body-lg;
+      font-size: calc($body-xl *.85);
     }
     @include screen("desktop") {
-      font-size: $body-sm;
+      font-size: $body-xl;
     }
   }
 
   &--lg {
-    font-size: $body-lg;
+    font-size: $body-sm;
 
     @include screen("laptop") {
-      font-size: $body-md;
+      font-size: calc($body-lg *.85);
     }
 
     @include screen("desktop") {
-      font-size: $body-sm;
+      font-size: $body-lg;
     }
   }
 
