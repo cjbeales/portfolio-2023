@@ -72,7 +72,7 @@ h5 {
 }
 
 //---Sizing / Weight---//
-h1, h2 {
+h1 {
   font-size: $heading-xxl;
   font-weight: 700;
   @include screen("laptop") {
@@ -83,16 +83,16 @@ h1, h2 {
   }
 }
 
-// h2 {
-//   font-size: $heading-md;
-//   font-weight: 700;
-//   @include screen("laptop") {
-//     font-size: calc($heading-xl *.85);
-//   }
-//   @include screen("desktop") {
-//     font-size: $heading-xl;
-//   }
-// }
+h2 {
+  font-size: $heading-md;
+  font-weight: 700;
+  @include screen("laptop") {
+    font-size: calc($heading-xl *.85);
+  }
+  @include screen("desktop") {
+    font-size: $heading-xl;
+  }
+}
 
 h3 {
   font-size: $heading-lg;
@@ -149,7 +149,7 @@ p {
   }
 
   &.margin--48 {
-    margin: 0 0 $space-24 0;
+    margin: 0 0 $space-32 0;
     @include screen("desktop") {
       margin: 0 0 $space-48 0;
     }

@@ -10,7 +10,7 @@ export const About = () => {
             <Container variant='large'>
                 <div className={styles.wrapper}>
                     <div className={styles.heading}>
-                        <h2 className='white margin--24'>About me</h2>
+                        <h2 className='white margin--24'>About me<span className='teal'>.</span></h2>
                     </div>
                     <div className={styles.content}>
                         <div className={styles.content__intro}>

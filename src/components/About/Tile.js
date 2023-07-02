@@ -12,7 +12,7 @@ export const Tile = ({ title, icon, iconWidth = 30, imgSrc, altText }) => {
                         <img src={imgSrc} alt={altText} width={`${iconWidth}px`} />
                 }
             </div>
-            <p class='no--margin body--xs centered'>{title}</p>
+            <p className='no--margin body--xs centered'>{title}</p>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const SplitContent = ({ children, imageSrc = '', aspectClass = '', customAspect = '' }) => {
     return (
         <div className={styles.splitContent}>
-            <div class={styles.content}>
+            <div Nameclass={styles.content}>
                 {children}
             </div>
             {imageSrc &&
