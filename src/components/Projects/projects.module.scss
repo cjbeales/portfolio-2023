@@ -1,0 +1,15 @@
+.project {
+
+    &__thumbnail {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: top;
+        min-height: 70vh;
+    }
+}
+
+.halfSize {
+    max-height: 40vh;
+    min-height: 0;
+}

@@ -8,6 +8,7 @@ export const ProjectList = [
         title: 'Project 2',
         href: '/projects/project-2',
         image: '/projects/screen-2.jpg',
+        halfSize: true
     },
     {
         title: 'Project 3',
@@ -18,6 +19,7 @@ export const ProjectList = [
         title: 'Project 4',
         href: '/projects/project-4',
         image: '/projects/screen-4.jpg',
+        halfSize: true
     },
     {
         title: 'Project 5',
@@ -28,5 +30,6 @@ export const ProjectList = [
         title: 'Project 6',
         href: '/projects/project-4',
         image: '/projects/screen-4.jpg',
+        halfSize: true
     }
 ]
