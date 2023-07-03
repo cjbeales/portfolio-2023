@@ -3,7 +3,7 @@ export const ProjectList = [
         title: 'Collecting Cars',
         href: '/projects/project-1',
         image: '/projects/screen-1.jpg',
-        tech: ['React', 'NextJS', 'SCSS']
+        tech: [{ title: 'React', title: 'NextJS', title: 'SCSS' }]
     },
     {
         title: 'Watch Collecting',

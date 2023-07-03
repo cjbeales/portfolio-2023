@@ -5,16 +5,6 @@
     background: $darkNavy;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    @include screen("desktop") {
-        flex-direction: row;
-    }
-}
-
 .heading {
     @include screen("desktop") {
         max-width: 30ch;
@@ -36,10 +26,10 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        gap: $space-64;
+        gap: $space-48;
         @include screen("tablet-and-mobile") {
             grid-template-columns: 1fr;
-            gap: $space-48;
+            gap: $space-32;
         }
     }
 
@@ -49,7 +39,7 @@
 
     &__column {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
         gap: $space-24 $space-24;
         margin-top: $space-16;
         width: fit-content;
@@ -64,9 +54,9 @@
         }
     }
 
-    .languagesColumn {
+    .toolsColumn {
         @extend .skillset__column;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
     }
 
     &__tile {

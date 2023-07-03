@@ -1,4 +1,4 @@
-import {faHtml5, faSass, faJs, faReact, faJoomla, faWordpress, faShopify, faGit, faFigma} from "@fortawesome/free-brands-svg-icons";
+import {faHtml5, faSass, faJs, faReact, faJoomla, faWordpress, faShopify, faGit, faFigma, faUmbraco} from "@fortawesome/free-brands-svg-icons";
 
 export const languagesFrameworkTiles = [
     {
@@ -45,8 +45,17 @@ export const cmsTiles = [
         icon: faShopify
     },
     {
+        title: 'Umbraco',
+        icon: faUmbraco
+    },
+    {
         title: 'Prismic',
         imgSrc: '/prismic_logo.svg',
+        iconWidth: 35
+    },
+    {
+        title: 'Contentful',
+        imgSrc: '/contentful_logo.svg',
         iconWidth: 35
     },
 ];

@@ -23,7 +23,7 @@ export const Projects = () => {
                                 />
                                 <div className={styles.contentBox}>
                                     <h4 className={'white margin--8'}>{title}</h4>
-                                   {console.log(typeof tech)}
+                                   {/* {console.log(typeof tech)} */}
                                     {/* {tech.map((item, i) => (
                                     <p key={i} className='no--margin body--sm'>{item}</p>    
                                     ))} */}
