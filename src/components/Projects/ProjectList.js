@@ -1,36 +1,36 @@
 export const ProjectList = [
     {
         title: 'Collecting Cars',
-        href: '/projects/project-1',
-        image: '/projects/screen-1.jpg',
+        href: '/projects/collecting-cars',
+        image: '/projects/collecting-cars.jpg',
         tech: [{ title: 'React', title: 'NextJS', title: 'SCSS' }]
     },
     {
         title: 'Watch Collecting',
-        href: '/projects/project-2',
-        image: '/projects/screen-2.jpg',
+        href: '/projects/watch-collecting',
+        image: '/projects/watch-collecting.jpg',
         halfSize: true
+    },
+    {
+        title: 'Adam & Eve Hair',
+        href: '/projects/adam-and-eve',
+        image: '/projects/adam-and-eve.jpg',
     },
     {
         title: 'P&A Renewables',
-        href: '/projects/project-3',
-        image: '/projects/screen-3.jpg',
+        href: '/projects/pa-renewables',
+        image: '/projects/pa-renewables.jpg',
+        halfSize: true
     },
     {
         title: 'Carlson Gracie',
-        href: '/projects/project-4',
-        image: '/projects/screen-4.jpg',
-        halfSize: true
+        href: '/projects/carlson-gracie',
+        image: '/projects/carlson-gracie.jpg',
     },
     {
         title: 'PSN Storefront',
-        href: '/projects/project-3',
-        image: '/projects/screen-3.jpg',
+        href: '/projects/psn-storefront',
+        image: '/projects/psn-storefront.jpg',
+        halfSize: true,
     },
-    {
-        title: 'Project 6',
-        href: '/projects/project-4',
-        image: '/projects/screen-4.jpg',
-        halfSize: true
-    }
 ]
