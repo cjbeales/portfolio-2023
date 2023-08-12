@@ -12,7 +12,7 @@
 
     &:after {
         position: absolute;
-        content: '';
+        content: "";
         left: 0;
         top: 0;
         width: 100%;
@@ -20,11 +20,10 @@
         background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
         opacity: 0;
         z-index: 2;
-        transition: opacity .4s ease-in-out;
+        transition: opacity 0.4s ease-in-out;
     }
 
     &:hover {
-
         &:after {
             opacity: 1;
         }
@@ -61,6 +60,18 @@
     height: auto;
     padding: $space-16;
     transform: translateY(105%);
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: 3;
+}
+
+.techGroup {
+    display: flex;
+    align-items: baseline;
+    gap: $space-8;
+}
+.pill {
+    width: fit-content;
+    padding: 0 $space-16;
+    border-radius: 20px;
+    background: white;
 }

@@ -169,15 +169,23 @@ p {
   color: $type-primary;
 }
 
+.col--dark {
+  color: $darkNavy;
+}
+
 .white {
   color: white;
 }
 
-.bold {
+.weight--bold {
   font-weight: 700;
 }
 
-.light {
+.weight--regular {
+  font-weight: 400;
+}
+
+.weight--light {
   font-weight: 300;
 }
 
