@@ -1,0 +1,16 @@
+.projectOverview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 50vw;
+    height: 100%;
+    background: lightcoral;
+    padding: 20px;
+    z-index: 999;
+    transition: transform .3s ease-in-out;
+}
+
+.visible {
+    transform: translateX(0);
+}

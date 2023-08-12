@@ -1,6 +1,7 @@
 export const ProjectList = [
     {
         title: 'Collecting Cars',
+        id: 0,
         description: `Europe's largest supercar online auction platform.`,
         href: '/projects/collecting-cars',
         image: '/projects/collecting-cars.jpg',
@@ -8,6 +9,7 @@ export const ProjectList = [
     },
     {
         title: 'Watch Collecting',
+        id: 1,
         description: `Market disrupting online auction platform for watches.`,
         href: '/projects/watch-collecting',
         image: '/projects/watch-collecting.jpg',
@@ -16,6 +18,7 @@ export const ProjectList = [
     },
     {
         title: 'Adam & Eve Hair',
+        id: 2,
         description: `A modern website for a successful local hair salon.`,
         href: '/projects/adam-and-eve',
         image: '/projects/adam-and-eve.jpg',
@@ -23,6 +26,7 @@ export const ProjectList = [
     },
     {
         title: 'P&A Renewables',
+        id: 3,
         description: `Wind turbine maintenance has never looked so good.`,
         href: '/projects/pa-renewables',
         image: '/projects/pa-renewables.jpg',
@@ -31,6 +35,7 @@ export const ProjectList = [
     },
     {
         title: 'Carlson Gracie Hull',
+        id: 4,
         description: `Design concept for a top UK BJJ acedemy.`,
         href: '/projects/carlson-gracie',
         image: '/projects/carlson-gracie.jpg',
@@ -38,6 +43,7 @@ export const ProjectList = [
     },
     {
         title: 'PSN Storefront',
+        id: 5,
         description: `Design concept for an new-look PSN storefront.`,
         href: '/projects/psn-storefront',
         image: '/projects/psn-storefront.jpg',
