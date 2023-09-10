@@ -3,10 +3,8 @@ import styles from './projects.module.scss';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ProjectList } from './ProjectList';
 import { Container } from '../Container';
-import Image from 'next/image';
 import { ProjectOverview } from './ProjectOverview';
-// import {useIsMobile} from "/";
-import { useIsMobile } from "../../hooks";
+import { useIsMobile } from "@/hooks";
 
 export const Projects = () => {
     const [overviewActive, setOverviewActive] = useState(false);
