@@ -1,4 +1,5 @@
 @import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
 @import "/src/styles/imports/mixins";
 
 .myProjects {
@@ -15,13 +16,16 @@
         position: absolute;
         content: "";
         left: 0;
-        top: 0;
+        bottom: 0;
         width: 100%;
-        height: 100%;
+        height: 70%;
         background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
-        opacity: 0;
         z-index: 2;
         transition: opacity 0.4s ease-in-out;
+        @include screen("desktopAll") {
+            opacity: 0;
+            height: 100%;
+        }
     }
 
     &:hover {
@@ -43,14 +47,20 @@
         display: block;
         object-fit: cover;
         object-position: top;
-        min-height: 70vh;
+        height: 300px;
         transition: transform 0.4s ease-in-out;
+        @include screen("desktopAll") {
+            min-height: 70vh;
+        }
     }
 }
 
 .halfSize {
-    max-height: 40vh;
+    height: 300px;
     min-height: 0;
+    @include screen("desktopAll") {
+        max-height: 40vh;
+    }
 }
 
 .contentBox {
@@ -60,19 +70,25 @@
     width: 100%;
     height: auto;
     padding: $space-16;
-    transform: translateY(105%);
     transition: transform 0.3s ease-in-out;
     z-index: 3;
+    @include screen("desktopAll") {
+        transform: translateY(105%);
+    }
 }
 
 .techGroup {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     gap: $space-8;
 }
 .pill {
     width: fit-content;
-    padding: 0 $space-16;
+    padding: 0 $space-8;
     border-radius: 20px;
     background: white;
+    @include screen("desktopAll") {
+        padding: 0 $space-16;
+    }
 }
