@@ -1,0 +1,37 @@
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
+@import "/src/styles/imports/mixins";
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $space-24 $space-16;
+    background: #E8E7EC;
+    border-radius: $space-12;
+    width: fit-content;
+    position: relative;
+    margin-left: 100px;
+
+    &:after {
+        content: "";
+        background-image: url("/bubble-point-white.svg");
+        background-size: contain;
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        bottom: -12px;
+        left: -14px;
+    }
+}
+
+.blue {
+    @extend .bubble;
+    background: #0078FF;
+    color: white;
+    &:after {
+        background-image: url("/bubble-point-blue.svg");
+        left: inherit;
+        right: -15px;
+    }
+}
