@@ -7,17 +7,14 @@ body,
 li,
 ol,
 a {
-  font-size: $body-sm;
+  font-size: $fs-22;
   color: $type-primary;
   line-height: $line-height-normal;
-  @include screen("desktop") {
-    font-size: $body-md;
-  }
 }
 
 p {
   font-family: $font-secondary;
-  font-size: $fs-18;
+  font-size: $fs-22;
   color: $type-primary;
   margin: $space-16 0;
   font-weight: $font-weight-normal;
@@ -148,7 +145,7 @@ p {
 }
 
 .weight--bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .weight--regular {
@@ -161,10 +158,6 @@ p {
 
 .font--primary {
   font-family: $font-primary;
-}
-
-.weight--bold {
-  font-weight: $font-weight-bold;
 }
 
 .opacity--85 {
@@ -212,6 +205,16 @@ p {
 }
 
 // --- Sizing Modifiers --- //
+
+.fs--55 {font-size: 5.5rem;}
+.fs--42 {font-size: 4.2rem;}
+.fs--35 {font-size: 3.5rem;}
+.fs--32 {font-size: 3.2rem;}
+.fs--22 {font-size: 2.2rem;}
+.fs--18 {font-size: 1.8rem;}
+.fs--16 {font-size: 1.6rem;}
+.fs--14 {font-size: 1.4rem;}
+.fs--12 {font-size: 1.2rem;}
 
 .body {
   &--xl {

@@ -18,10 +18,10 @@
     }
 
     @include screen("desktop") {
-        height: 80vh;
+        height: 70vh;
     }
 
     p {
-        max-width: 40ch;
+        max-width: 50ch;
     }
 }

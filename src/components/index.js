@@ -1,3 +1,4 @@
+export { TechStack } from './TechStack';
 export { About } from './About'
 export { Button } from './Button'
 export { Container } from './Container';
