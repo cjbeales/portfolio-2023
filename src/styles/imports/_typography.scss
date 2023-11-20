@@ -50,10 +50,6 @@ h1 {
   font-size: $fs-55;
   font-weight: 700;
 
-  @include screen("laptop") {
-    font-size: calc($fs-55 * 0.85);
-  }
-
   @include screen("tablet-and-mobile") {
     font-size: $fs-35;
   }
@@ -63,11 +59,7 @@ h2 {
   font-size: $fs-42;
   font-weight: 700;
 
-  @include screen("laptop") {
-    font-size: calc($fs-42 * 0.85);
-  }
-
-  @include screen("desktop") {
+  @include screen("tablet-and-mobile") {
     font-size: $fs-32;
   }
 }
@@ -75,7 +67,7 @@ h2 {
 h3 {
   font-size: $fs-18;
 
-  @include screen("desktop") {
+  @include screen("tablet-and-mobile") {
     font-size: $fs-16;
   }
 }

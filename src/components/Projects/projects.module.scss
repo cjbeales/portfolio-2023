@@ -3,12 +3,14 @@
 @import "/src/styles/imports/mixins";
 
 .myProjects {
-    background: $navy;
+    background: $darkNavy;
 }
 
 .project {
     overflow: hidden;
     position: relative;
+    border-radius: $space-16;
+    border: 2px solid #183666;
     z-index: 1;
     cursor: pointer;
 
@@ -33,7 +35,7 @@
         }
 
         .project__thumbnail {
-            transform: scale(1.25);
+            transform: scale(1.1);
         }
 
         .contentBox {
@@ -46,8 +48,10 @@
         display: block;
         object-fit: cover;
         object-position: top;
+        border-radius: $space-16;
         height: 300px;
         transition: transform 0.4s ease-in-out;
+    
         @include screen("desktopAll") {
             min-height: 70vh;
         }
@@ -57,6 +61,7 @@
 .halfSize {
     height: 300px;
     min-height: 0;
+    
     @include screen("desktopAll") {
         max-height: 40vh;
     }

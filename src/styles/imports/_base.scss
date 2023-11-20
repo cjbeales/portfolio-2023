@@ -1,3 +1,6 @@
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
+
 html,
 body {
   padding: 0;
@@ -11,10 +14,9 @@ body {
 }
 
 section {
-  padding: $space-120 0;
-
-  &.compact {
-    padding: $space-32 0;
+  padding: $space-48 0;
+  @include screen("tablet-and-desktop") {
+    padding: $space-80 0;
   }
 }
 
@@ -38,23 +40,3 @@ main {
     display: inherit;
   }
 }
-
-.slick-list {
-  padding: 0 0 0 20% !important;
-  margin: 0 -$space-16;
-  .slick-slide {
-    margin: 0 $space-16;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-// .slick-slide {
-//   margin: 0 27px;
-// }
-
-// /* the parent */
-// .slick-list {
-//   margin: 0 -27px;
-// }

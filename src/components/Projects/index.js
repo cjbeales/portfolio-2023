@@ -19,8 +19,9 @@ export const Projects = () => {
     return (
         <section id="projects" className={styles.myProjects}>
 
-            <Container variant='large'>
-                <h2 className='margin--48 white'>Projects<span className='teal'>.</span></h2>
+            <Container variant='standard'>
+                <h2 className='white margin--8'>Projects<span className='teal'>.</span></h2>
+                <p className='margin--64'>A mixture of commercial, freelance and passion projects.</p>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                 >

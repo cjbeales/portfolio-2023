@@ -9,10 +9,10 @@
     }
 
     &__column {
-        margin-right: $space-32;
+        margin-right: $space-48;
         display: flex;
         align-items: flex-start;
-        gap: $space-16;
+        gap: $space-24;
         position: relative;
 
         &:first-of-type {
@@ -20,7 +20,7 @@
                 position: absolute;
                 content: "";
                 top: 50%;
-                right: -$space-16;
+                right: -$space-24;
                 transform: translateY(-50%);
                 height: 70%;
                 width: 2px;
