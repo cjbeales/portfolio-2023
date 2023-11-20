@@ -2,16 +2,19 @@
 @import "/src/styles/imports/media-queries";
 @import "/src/styles/imports/mixins";
 
+.wrapper {
+    display: flex;
+}
+
 .bubble {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: $space-24 $space-16;
-    background: #E8E7EC;
+    background: #e8e7ec;
     border-radius: $space-12;
     width: fit-content;
     position: relative;
-    margin-left: 100px;
 
     &:after {
         content: "";
@@ -27,11 +30,18 @@
 
 .blue {
     @extend .bubble;
-    background: #0078FF;
+    background: #0078ff;
     color: white;
     &:after {
         background-image: url("/bubble-point-blue.svg");
         left: inherit;
         right: -15px;
     }
+}
+
+.image {
+    width: $space-32;
+    height: $space-32;
+    border-radius: 50%;
+    background-color: red;
 }
