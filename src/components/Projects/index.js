@@ -43,7 +43,7 @@ export const Projects = () => {
                                     <p className={'body--sm white margin--16'}>{description}</p>
                                     <div className={styles.techGroup}>
                                         {tech?.map((item, i) => (
-                                            <div key={i} className={`${styles.pill} no--margin body--xs weight--regular col--dark`}><span>{item}</span></div>
+                                            <div key={i} className={`${styles.pill} no--margin fs--14 white`}><span>{item}</span></div>
                                         ))}
                                     </div>
                                 </div>
