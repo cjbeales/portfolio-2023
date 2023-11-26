@@ -1,6 +1,6 @@
 import styles from './tech-stack.module.scss';
 import { Tile } from './Tile';
-import { languagesFrameworkTiles, cmsTiles, toolsTiles } from './tileData';
+import { languagesFrameworkTiles, cmsTiles } from './tileData';
 
 export const TechStack = () => {
     return (
