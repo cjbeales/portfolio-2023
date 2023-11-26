@@ -1,11 +1,12 @@
 export { About } from './About'
 export { Button } from './Button'
+export { ContactSection } from './Contact';
 export { Container } from './Container';
 export { Header } from './Header/index'
+export { Layout } from './Layout'
 export { Projects } from './Projects/index';
 export { SectionTitle } from './SectionTitle';
 export { Splash } from './Splash/index';
 export { SplitContent } from './Content/SplitContent/index';
 export { TechStack } from './TechStack';
 export { Testimonials } from './Testimonials';
-export { ContactSection } from './Contact';
