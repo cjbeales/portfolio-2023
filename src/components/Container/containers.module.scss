@@ -8,7 +8,7 @@
   padding: 0 $space-32;
   box-sizing: border-box;
   position: relative;
-  @include screen('tablet-and-mobile') {
+  @include screen("tablet-and-mobile") {
     padding: 0 $space-24;
   }
 }
@@ -23,17 +23,20 @@
   @extend .container;
   max-width: 1680px;
 }
+
 .standard {
   @extend .container;
   max-width: 1200px;
-  @include screen('desktop') {
+  @include screen("desktop") {
     max-width: 1680px;
   }
 }
+
 .narrow {
   @extend .container;
   max-width: 960px;
 }
+
 .copy {
   @extend .container;
   max-width: 720px;

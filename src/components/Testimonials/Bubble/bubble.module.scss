@@ -3,28 +3,82 @@
 @import "/src/styles/imports/mixins";
 
 .wrapper {
+    width: fit-content;
+    &__reversed {
+        @extend .wrapper;
+        margin: 0 0 0 auto;
+    }
+}
+
+.bubbleAndPic {
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: $space-16;
+    margin-bottom: $space-32;
+    max-width: 750px;
+    position: relative;
+
+    @include screen("tablet-and-desktop") {
+        margin-bottom: $space-48;
+    }
+
+    &__reversed {
+        @extend .bubbleAndPic;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+}
+
+.name {
+    margin: 0 0 $space-8 42px;
+    width: fit-content;
+
+    @include screen("tablet-and-desktop") {
+        margin: 0 0 $space-8 $space-48;
+    }
+
+    &__reversed {
+        text-align: right;
+        margin: 0 42px $space-8 0;
+
+        @include screen("tablet-and-desktop") {
+            margin: 0 $space-48 $space-8 0;
+        }
+    }
 }
 
 .bubble {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: $space-24 $space-16;
+    padding: $space-16;
     background: #e8e7ec;
-    border-radius: $space-12;
+    border-radius: $space-8;
     width: fit-content;
     position: relative;
+
+    @include screen("tablet-and-desktop") {
+        padding: $space-24;
+        border-radius: $space-12;
+    }
 
     &:after {
         content: "";
         background-image: url("/bubble-point-white.svg");
         background-size: contain;
         position: absolute;
-        width: 40px;
-        height: 45px;
-        bottom: -12px;
-        left: -14px;
+        width: 27px;
+        height: 30px;
+        bottom: -4px;
+        left: -9px;
+
+        @include screen("tablet-and-desktop") {
+            width: 40px;
+            height: 45px;
+            bottom: -12px;
+            left: -14px;
+        }
     }
 }
 
@@ -32,16 +86,40 @@
     @extend .bubble;
     background: #0078ff;
     color: white;
+
     &:after {
         background-image: url("/bubble-point-blue.svg");
         left: inherit;
-        right: -15px;
+        right: -10px;
+
+        @include screen("tablet-and-desktop") {
+            right: -15px;
+        }
     }
 }
 
 .image {
-    width: $space-32;
-    height: $space-32;
+    min-width: $space-24;
+    min-height: $space-24;
+    width: $space-24;
+    height: $space-24;
+    padding: 4px;
     border-radius: 50%;
-    background-color: red;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    @include screen("tablet-and-desktop") {
+        min-width: 36px;
+        min-height: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
 }
