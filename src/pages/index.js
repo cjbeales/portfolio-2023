@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <Layout>
       <Splash />
-      <About />
       <Projects />
       <Testimonials />
     </Layout>

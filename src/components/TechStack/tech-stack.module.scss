@@ -1,0 +1,49 @@
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
+
+.skillset {
+    &__wrapper {
+        margin-top: $space-64;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__column {
+        margin-right: $space-48;
+        display: flex;
+        align-items: flex-start;
+        gap: $space-24;
+        position: relative;
+
+        &:first-of-type {
+            &:after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: -$space-24;
+                transform: translateY(-50%);
+                height: 70%;
+                width: 2px;
+                background: $type-primary;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__block {
+        display: block;
+        text-align: center;
+    }
+
+    &__tile {
+        background: $lightNavy;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: $space-32;
+        height: $space-32;
+        padding: $space-8;
+        border-radius: 10px;
+        margin: 0 auto 6px auto;
+    }
+}

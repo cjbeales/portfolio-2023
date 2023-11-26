@@ -7,24 +7,18 @@ body,
 li,
 ol,
 a {
-  font-size: $body-sm;
+  font-size: $fs-22;
   color: $type-primary;
-  line-height: $line-height-normal;
-  @include screen("desktop") {
-    font-size: $body-md;
-  }
+  line-height: $line-height-dense;
 }
 
 p {
   font-family: $font-secondary;
-  font-size: $body-sm;
+  font-size: $fs-22;
   color: $type-primary;
   margin: $space-16 0;
   font-weight: $font-weight-normal;
   line-height: $line-height-dense;
-  @include screen("desktopAll") {
-    font-size: $body-md;
-  }
 }
 
 a {
@@ -40,16 +34,7 @@ h4,
 h5 {
   font-family: $font-primary;
   line-height: $line-height-dense;
-  margin: $space-24 0;
   color: $type-primary;
-
-  &:first-of-type {
-    margin: 0 0 $space-24 0;
-
-    &.no--margin {
-      @extend .no--margin;
-    }
-  }
 
   span {
     font-size: inherit;
@@ -59,57 +44,31 @@ h5 {
 }
 
 //---Standardised margins---//
-h1,
-h2 {
-  @extend .margin--32;
-  text-transform: uppercase;
-}
-
-h3,
-h4,
-h5 {
-  @extend .margin--24;
-}
 
 //---Sizing / Weight---//
 h1 {
-  font-size: $heading-xxl;
+  font-size: $fs-55;
   font-weight: 700;
-  @include screen("laptop") {
-    font-size: calc($heading-xxl *.85);
-  }
+
   @include screen("tablet-and-mobile") {
-    font-size: $heading-md;
+    font-size: $fs-35;
   }
 }
 
 h2 {
-  font-size: $heading-md;
+  font-size: $fs-42;
   font-weight: 700;
-  @include screen("laptop") {
-    font-size: calc($heading-xl *.85);
-  }
-  @include screen("desktop") {
-    font-size: $heading-xl;
+
+  @include screen("tablet-and-mobile") {
+    font-size: $fs-32;
   }
 }
 
 h3 {
-  font-size: $heading-lg;
+  font-size: $fs-18;
 
-  @include screen("laptop") {
-    font-size: calc($heading-md *.85);
-  }
-
-  @include screen("desktop") {
-    font-size: $heading-md;
-  }
-}
-
-h4 {
-  font-size: $heading-sm;
-  @include screen("desktop") {
-    font-size: $heading-md;
+  @include screen("tablet-and-mobile") {
+    font-size: $fs-16;
   }
 }
 
@@ -178,7 +137,7 @@ p {
 }
 
 .weight--bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .weight--regular {
@@ -191,10 +150,6 @@ p {
 
 .font--primary {
   font-family: $font-primary;
-}
-
-.weight--bold {
-  font-weight: $font-weight-bold;
 }
 
 .opacity--85 {
@@ -243,11 +198,21 @@ p {
 
 // --- Sizing Modifiers --- //
 
+.fs--55 {font-size: 5.5rem;}
+.fs--42 {font-size: 4.2rem;}
+.fs--35 {font-size: 3.5rem;}
+.fs--32 {font-size: 3.2rem;}
+.fs--22 {font-size: 2.2rem;}
+.fs--18 {font-size: 1.8rem;}
+.fs--16 {font-size: 1.6rem;}
+.fs--14 {font-size: 1.4rem;}
+.fs--12 {font-size: 1.2rem;}
+
 .body {
   &--xl {
-    font-size: $body-md; 
+    font-size: $body-md;
     @include screen("laptop") {
-      font-size: calc($body-xl *.85);
+      font-size: calc($body-xl * 0.85);
     }
     @include screen("desktop") {
       font-size: $body-xl;
@@ -258,7 +223,7 @@ p {
     font-size: $body-sm;
 
     @include screen("laptop") {
-      font-size: calc($body-lg *.85);
+      font-size: calc($body-lg * 0.85);
     }
 
     @include screen("desktop") {

@@ -8,8 +8,8 @@
   padding: 0 $space-32;
   box-sizing: border-box;
   position: relative;
-  @include screen("laptop") {
-    padding: 0 $space-64;
+  @include screen('tablet-and-mobile') {
+    padding: 0 $space-24;
   }
 }
 
@@ -26,6 +26,9 @@
 .standard {
   @extend .container;
   max-width: 1200px;
+  @include screen('desktop') {
+    max-width: 1680px;
+  }
 }
 .narrow {
   @extend .container;

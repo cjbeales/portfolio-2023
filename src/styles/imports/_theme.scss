@@ -26,9 +26,19 @@ $positive: #59a64d;
 //--- TYPOGRAPHY ---//
 
 // Typefaces
-$font-primary: "Montserrat", sans-serif;
-$font-secondary: "Lato", sans-serif;
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Mulish', sans-serif;
 $font-family-base: $font-secondary;
+
+$fs-55: 5.5rem;
+$fs-42: 4.2rem;
+$fs-35: 3.5rem;
+$fs-32: 3.2rem;
+$fs-22: 2.2rem;
+$fs-18: 1.8rem;
+$fs-16: 1.6rem;
+$fs-14: 1.4rem;
+$fs-12: 1.2rem;
 
 // Heading sizing
 $heading-xxl: 9rem;
@@ -46,8 +56,8 @@ $body-sm: 1.8rem; //was 14px
 $body-xs: 1.4rem; //was 14px
 
 // Type line heights
-$line-height-normal: 160%;
-$line-height-dense: 130%;
+$line-height-normal: 1.4;
+$line-height-dense: 1.2;
 
 $font-weight-bold: 700;
 $font-weight-normal: 400;

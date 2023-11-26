@@ -3,7 +3,7 @@ export const ProjectList = [
         title: 'Collecting Cars',
         id: 0,
         description: `Europe's largest supercar online auction platform.`,
-        href: '/projects/collecting-cars',
+        href: 'https://collectingcars.com',
         image: '/projects/collecting-cars.jpg',
         tech: ['React', 'NextJS', 'SCSS', 'Contentful']
     },
@@ -11,7 +11,7 @@ export const ProjectList = [
         title: 'Watch Collecting',
         id: 1,
         description: `Market disrupting online auction platform for watches.`,
-        href: '/projects/watch-collecting',
+        href: 'https://watchcollecting.com',
         image: '/projects/watch-collecting.jpg',
         tech: ['React', 'NextJS', 'SCSS', 'Contentful'],
         halfSize: true
@@ -20,7 +20,7 @@ export const ProjectList = [
         title: 'Adam & Eve Hair',
         id: 2,
         description: `A modern website for a successful local hair salon.`,
-        href: '/projects/adam-and-eve',
+        href: 'https://adamandevehair.co.uk',
         image: '/projects/adam-and-eve.jpg',
         tech: ['Wordpress', 'Javascript', 'SCSS'],
     },
@@ -28,7 +28,7 @@ export const ProjectList = [
         title: 'P&A Renewables',
         id: 3,
         description: `Wind turbine maintenance has never looked so good.`,
-        href: '/projects/pa-renewables',
+        href: 'https://www.pa-renewableservices.com/',
         image: '/projects/pa-renewables.jpg',
         tech: ['HTML', 'SCSS', 'Javascript'],
         halfSize: true
