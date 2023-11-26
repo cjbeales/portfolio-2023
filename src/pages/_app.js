@@ -1,5 +1,6 @@
-// import '../styles/globals.scss';
+import '../styles/globals.scss';
 
-// export const App = ({ Component, pageProps }) => {
-//   return <Component {...pageProps} />
-// }
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+  
