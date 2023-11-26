@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { headerMenuItems } from "./MenuItems";
 
-
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
@@ -22,10 +21,11 @@ export const Header = () => {
                 </div>
                 <nav>
                     {isMenuOpen && isMenuOpen === true &&
-                        <div className={styles.close}
+                        <div
+                            className={styles.close}
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
-                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'black'} />
+                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'white'} />
                         </div>
                     }
                     <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
@@ -39,7 +39,7 @@ export const Header = () => {
                     </ul>
                     {isMobile && isMenuOpen === false &&
                         <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                            <FontAwesomeIcon icon={faBars} />
+                            <FontAwesomeIcon icon={faBars} color={'white'} />
                         </div>
                     }
 

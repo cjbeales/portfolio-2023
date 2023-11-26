@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container } from '@/components/Container';
 import styles from './splash.module.scss';
-import { Button, TechStack } from '@/components';
+import { Container, TechStack } from '@/components';
 import Image from 'next/image';
 
 export const Splash = ({ backgroundImg = '' }) => {
