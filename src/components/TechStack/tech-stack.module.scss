@@ -8,6 +8,7 @@
         align-items: flex-start;
 
         @include screen("tablet-and-mobile") {
+            margin-top: $space-48;
             flex-direction: column;
             gap: $space-32;
         }
