@@ -1,5 +1,5 @@
 import { Splash, Projects, Testimonials, ContactSection } from '@/components';
-import Layout from '@/components';
+import { Layout } from '@/components';
 
 export const Home = () => {
   return (
