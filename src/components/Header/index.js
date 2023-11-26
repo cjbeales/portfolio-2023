@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './header.module.scss';
 import Link from "next/link";
-import {Container, Button} from "@/components";
-import {useIsMobile} from "../../hooks";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
-import {headerMenuItems} from "./MenuItems";
+import { Container, Button } from "@/components";
+import { useIsMobile } from "@/hooks";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { headerMenuItems } from "./MenuItems";
 
 
 export const Header = () => {
@@ -23,9 +23,9 @@ export const Header = () => {
                 <nav>
                     {isMenuOpen && isMenuOpen === true &&
                         <div className={styles.close}
-                             onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
-                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'black'}/>
+                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'black'} />
                         </div>
                     }
                     <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
@@ -39,10 +39,10 @@ export const Header = () => {
                     </ul>
                     {isMobile && isMenuOpen === false &&
                         <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                            <FontAwesomeIcon icon={faBars}/>
+                            <FontAwesomeIcon icon={faBars} />
                         </div>
                     }
-                
+
                 </nav>
             </Container>
         </div>

@@ -14,11 +14,15 @@ a {
 
 p {
   font-family: $font-secondary;
-  font-size: $fs-22;
+  font-size: $fs-18;
   color: $type-primary;
   margin: $space-16 0;
   font-weight: $font-weight-normal;
   line-height: $line-height-normal;
+
+  @include screen("tablet-and-desktop") {
+    font-size: $fs-22;
+  }
 }
 
 a {
@@ -198,19 +202,41 @@ p {
 
 // --- Sizing Modifiers --- //
 
-.fs--55 {font-size: 5.5rem;}
-.fs--42 {font-size: 4.2rem;}
-.fs--35 {font-size: 3.5rem;}
-.fs--32 {font-size: 3.2rem;}
-.fs--22 {font-size: 2.2rem;}
-.fs--18 {font-size: 1.8rem;}
-.fs--16 {font-size: 1.6rem;}
-.fs--14 {font-size: 1.4rem;}
-.fs--12 {font-size: 1.2rem;}
+.fs--55 {
+  font-size: 5.5rem;
+}
+.fs--42 {
+  font-size: 4.2rem;
+}
+.fs--35 {
+  font-size: 3.5rem;
+}
+.fs--32 {
+  font-size: 3.2rem;
+}
+.fs--22 {
+  font-size: 2.2rem;
+}
+.fs--18 {
+  font-size: 1.8rem;
+}
+.fs--16 {
+  font-size: 1.6rem;
+}
+.fs--14 {
+  font-size: 1.4rem;
+}
+.fs--12 {
+  font-size: 1.2rem;
+}
 
 // --- Line height Modifiers --- //
-.lh--normal {line-height: $line-height-normal;}
-.lh--large {line-height: $line-height-large;}
+.lh--normal {
+  line-height: $line-height-normal;
+}
+.lh--large {
+  line-height: $line-height-large;
+}
 
 .body {
   &--xl {

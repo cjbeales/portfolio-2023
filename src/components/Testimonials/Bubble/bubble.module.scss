@@ -76,7 +76,7 @@
         @include screen("tablet-and-desktop") {
             width: 40px;
             height: 45px;
-            bottom: -12px;
+            bottom: -8px;
             left: -14px;
         }
     }
@@ -93,7 +93,7 @@
         right: -10px;
 
         @include screen("tablet-and-desktop") {
-            right: -15px;
+            right: -14px;
         }
     }
 }

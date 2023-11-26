@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
-import { Container } from '../Container';
+import { Container } from '@/components';
 
 export default function Navbar() {
     return (
