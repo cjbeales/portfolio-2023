@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Splash = ({ backgroundImg = '' }) => {
     return (
-        <div className={`${styles.splash} ${backgroundImg ? styles.overlay : ''}`}>
+        <section className={`${styles.splash} ${backgroundImg ? styles.overlay : ''}`}>
             {backgroundImg &&
                 <Image src={backgroundImg} fill={true} />
             }
@@ -14,6 +14,6 @@ export const Splash = ({ backgroundImg = '' }) => {
                 <p>I&apos;m a front end engineer who specializes in modern <span className="teal">clean design</span> and elegant <span className="teal">performance-driven</span> code.</p>
                 <TechStack />
             </Container>
-        </div>
+        </section>
     )
 }

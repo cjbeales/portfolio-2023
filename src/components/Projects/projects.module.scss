@@ -5,10 +5,15 @@
 .project {
     overflow: hidden;
     position: relative;
-    border-radius: $space-16;
-    border: 2px solid #183666;
+    border-radius: $space-8;
+    // border: 1px solid #183666;
     z-index: 1;
     cursor: pointer;
+
+@include screen('tablet-and-desktop') {
+    border: 2px solid #183666;
+    border-radius: $space-16;
+}
 
     &:after {
         position: absolute;
@@ -20,6 +25,7 @@
         background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 80%);
         z-index: 2;
         transition: opacity 0.4s ease-in-out;
+
         @include screen("desktopAll") {
             opacity: 0;
         }
@@ -44,9 +50,13 @@
         display: block;
         object-fit: cover;
         object-position: top;
-        border-radius: $space-16;
+        border-radius: $space-8;
         height: 300px;
         transition: transform 0.4s ease-in-out;
+
+        @include screen('tablet-and-desktop') {
+            border-radius: $space-16;
+        }
 
         @include screen("desktopAll") {
             min-height: 70vh;
@@ -72,6 +82,7 @@
     padding: $space-16;
     transition: transform 0.3s ease-in-out;
     z-index: 3;
+
     @include screen("desktopAll") {
         transform: translateY(105%);
     }
