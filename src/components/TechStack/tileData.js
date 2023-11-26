@@ -1,6 +1,6 @@
-import {faHtml5, faSass, faJs, faReact, faJoomla, faWordpress, faShopify, faGit, faFigma, faUmbraco} from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faSass, faJs, faReact, faJoomla, faWordpress, faShopify, faUmbraco } from "@fortawesome/free-brands-svg-icons";
 
-export const languagesFrameworkTiles = [
+export const techStackData = [
     {
         title: 'HTML',
         icon: faHtml5,
@@ -11,7 +11,7 @@ export const languagesFrameworkTiles = [
         iconWidth: 40
     },
     {
-        title: 'Javascript',
+        title: 'JS',
         icon: faJs
     },
     {
@@ -28,10 +28,6 @@ export const languagesFrameworkTiles = [
         imgSrc: '/gatsby_logo.svg',
         iconWidth: 35
     },
-];
-
-
-export const cmsTiles = [
     {
         title: 'Joomla',
         icon: faJoomla,
@@ -56,27 +52,6 @@ export const cmsTiles = [
     {
         title: 'Contentful',
         imgSrc: '/contentful_logo.svg',
-        iconWidth: 35
-    },
-];
-
-export const toolsTiles = [
-    {
-        title: 'Git',
-        icon: faGit,
-    },
-    {
-        title: 'Figma',
-        icon: faFigma,
-    },
-    {
-        title: 'XD',
-        imgSrc: '/xd_logo.svg',
-        iconWidth: 35
-    },
-    {
-        title: 'Photoshop',
-        imgSrc: '/photoshop_logo.svg',
         iconWidth: 35
     },
 ];

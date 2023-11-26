@@ -6,27 +6,26 @@
         margin-top: $space-64;
         display: flex;
         align-items: flex-start;
+
+        @include screen("tablet-and-mobile") {
+            flex-direction: column;
+            gap: $space-32;
+        }
     }
 
     &__column {
-        margin-right: $space-48;
         display: flex;
         align-items: flex-start;
         gap: $space-24;
+        flex-wrap: wrap;
         position: relative;
 
-        &:first-of-type {
-            &:after {
-                position: absolute;
-                content: "";
-                top: 50%;
-                right: -$space-24;
-                transform: translateY(-50%);
-                height: 70%;
-                width: 2px;
-                background: $type-primary;
-                opacity: 0.5;
-            }
+        @include screen("tablet") {
+            gap: $space-32;
+        }
+
+        @include screen("desktopAll") {
+            gap: $space-24;
         }
     }
 
@@ -40,10 +39,16 @@
         display: flex;
         align-self: center;
         justify-content: center;
-        width: $space-32;
-        height: $space-32;
+        width: $space-36;
+        height: $space-36;
         padding: $space-8;
         border-radius: 10px;
         margin: 0 auto 6px auto;
+        box-sizing: border-box;
+
+        @include screen("tablet-and-desktop") {
+            width: $space-48;
+            height: $space-48;
+        }
     }
 }

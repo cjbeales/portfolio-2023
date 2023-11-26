@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './tech-stack.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useIsDesktop } from '@/hooks';
 
 export const Tile = ({ title, icon, iconWidth = 30, imgSrc, altText }) => {
+    const isDesktop = useIsDesktop();
+
     return (
         <div className={styles.skillset__block}>
             <div className={styles.skillset__tile}>
@@ -12,7 +15,7 @@ export const Tile = ({ title, icon, iconWidth = 30, imgSrc, altText }) => {
                         <img src={imgSrc} alt={altText} width={`${iconWidth}px`} />
                 }
             </div>
-            <p className='fs--14 weight--bold no--margin'>{title}</p>
+            <p className={`bold no--margin ${isDesktop ? 'fs--14' : 'fs--12'}`}>{title}</p>
         </div>
     )
 }
