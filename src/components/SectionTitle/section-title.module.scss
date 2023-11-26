@@ -5,11 +5,14 @@
     margin-bottom: $space-32;
 
     &__extraSpaceBottom {
-        @extend .sectionTitle;
-        margin-bottom: $space-48;
-        
-        @include screen('tablet-and-desktop') {
+        @include screen("tablet-and-desktop") {
             margin-bottom: $space-64;
+        }
+    }
+
+    &__centered {
+        @include screen("tablet-and-desktop") {
+            text-align: center;
         }
     }
 }

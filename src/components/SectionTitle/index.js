@@ -3,12 +3,17 @@ import styles from './section-title.module.scss';
 
 export const SectionTitle = ({ title, subContent, centered = false, extraSpaceBottom = false }) => {
     return (
-        <div className={extraSpaceBottom ? styles.sectionTitle__extraSpaceBottom : styles.sectionTitle}>
-            <h2 className={`${centered ? 'centered' : ''} white margin--8`}>
-                {title}
+        <div
+            className={`
+            ${styles.sectionTitle} 
+            ${extraSpaceBottom ? styles.sectionTitle__extraSpaceBottom : ''}
+            ${centered ? styles.sectionTitle__centered : ''}
+            `}>
+            <h2 className='white margin--8'>
+                {title}<span className='teal'>.</span>
             </h2>
             {subContent &&
-                <p className={`${centered ? 'centered' : ''} no--margin`}>
+                <p className='no--margin'>
                     {subContent}
                 </p>
             }

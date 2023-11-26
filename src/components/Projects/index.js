@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './projects.module.scss';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ProjectList } from './ProjectList';
-import { Container } from '../Container';
+import { Container, SectionTitle } from '@/components';
 import { useIsMobile } from "@/hooks";
 
 export const Projects = () => {
@@ -10,9 +10,12 @@ export const Projects = () => {
 
     return (
         <section id="projects" className={styles.myProjects}>
-
             <Container variant='large'>
-                <h2 className='margin--48 white'>Projects<span className='teal'>.</span></h2>
+            <SectionTitle
+                    title={'Projects'}
+                    subContent={`A mixture of commercial, freelance and passion projects.`}
+                    extraSpaceBottom={true}
+                />
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                 >
