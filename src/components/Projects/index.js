@@ -9,7 +9,7 @@ export const Projects = () => {
     const isMobile = useIsMobile;
 
     return (
-        <section id="projects" className={styles.myProjects}>
+        <section id="projects" className='dark'>
             <Container variant='large'>
             <SectionTitle
                     title={'Projects'}

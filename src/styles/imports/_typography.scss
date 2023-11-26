@@ -89,6 +89,10 @@ p {
     @extend .no--margin;
   }
 
+  &.margin--4 {
+    margin: 0 0 $space-4 0;
+  }
+
   &.margin--8 {
     margin: 0 0 $space-8 0;
   }
@@ -190,6 +194,10 @@ p {
   text-decoration: underline;
 }
 
+.no-text-decoration {
+  text-decoration: none;
+}
+
 .centered {
   text-align: center;
 }
@@ -236,6 +244,10 @@ p {
 }
 .lh--large {
   line-height: $line-height-large;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .body {

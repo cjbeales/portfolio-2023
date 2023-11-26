@@ -14,10 +14,15 @@ body {
 }
 
 section {
+  background: $navy;
   padding: $space-48 0;
   @include screen("tablet-and-desktop") {
     padding: $space-80 0;
   }
+}
+
+.dark {
+  background: $darkNavy;
 }
 
 main {

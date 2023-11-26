@@ -1,10 +1,11 @@
-export { TechStack } from './TechStack';
 export { About } from './About'
 export { Button } from './Button'
 export { Container } from './Container';
 export { Header } from './Header/index'
+export { Projects } from './Projects/index';
+export { SectionTitle } from './SectionTitle';
 export { Splash } from './Splash/index';
 export { SplitContent } from './Content/SplitContent/index';
-export { Projects } from './Projects/index';
+export { TechStack } from './TechStack';
 export { Testimonials } from './Testimonials';
-export { SectionTitle } from './SectionTitle';
+export { ContactSection } from './Contact';

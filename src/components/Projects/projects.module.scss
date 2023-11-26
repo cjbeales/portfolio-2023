@@ -2,10 +2,6 @@
 @import "/src/styles/imports/media-queries";
 @import "/src/styles/imports/mixins";
 
-.myProjects {
-    background: $darkNavy;
-}
-
 .project {
     overflow: hidden;
     position: relative;
@@ -87,6 +83,7 @@
     flex-wrap: wrap;
     gap: $space-8;
 }
+
 .pill {
     width: fit-content;
     padding: 4px $space-8;

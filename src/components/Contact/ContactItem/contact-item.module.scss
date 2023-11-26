@@ -1,0 +1,28 @@
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
+
+.contactItem {
+    display: flex;
+    gap: $space-16;
+    align-items: center;
+
+    &__content {
+        display: block;
+    }
+}
+
+.icon {
+    width: $space-48;
+    height: $space-48;
+    min-width: $space-48;
+    min-height: $space-48;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    text-decoration-color: $type-primary;
+}

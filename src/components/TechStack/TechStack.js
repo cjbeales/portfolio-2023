@@ -15,11 +15,6 @@ export const TechStack = () => {
                     <Tile key={title} title={title} icon={icon} iconWidth={iconWidth} imgSrc={imgSrc} />
                 ))}
             </div>
-            {/* <div className={`${styles.skillset__column}`}>
-                {toolsTiles.map(({ title, icon, iconWidth, imgSrc }) => (
-                    <Tile key={title} title={title} icon={icon} iconWidth={iconWidth} imgSrc={imgSrc} />
-                ))}
-            </div> */}
         </div>
     )
 }

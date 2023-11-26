@@ -1,0 +1,20 @@
+@import "/src/styles/imports/theme";
+@import "/src/styles/imports/media-queries";
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-48;
+    width: fit-content;
+
+    @include screen('tablet') {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: $space-48;
+    }
+
+    @include screen('desktopAll') {
+        grid-template-columns: repeat(4, 1fr);
+        gap: $space-96;
+        margin-top: $space-64;
+    }
+}
