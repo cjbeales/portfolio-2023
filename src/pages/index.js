@@ -1,7 +1,8 @@
+import React from 'react';
 import { Splash, Projects, Testimonials, ContactSection } from '@/components';
 import { Layout } from '@/components';
 
-export const Home = () => {
+const Home = () => {
   return (
     <Layout>
       <Splash />
@@ -10,4 +11,6 @@ export const Home = () => {
       <ContactSection />
     </Layout>
   )
-}
+};
+
+export default Home;
