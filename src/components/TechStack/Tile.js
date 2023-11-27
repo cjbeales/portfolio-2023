@@ -10,12 +10,12 @@ export const Tile = ({ title, icon, iconWidth = 30, imgSrc, altText }) => {
         <div className={styles.skillset__block}>
             <div className={styles.skillset__tile}>
                 {
-                    icon ? <FontAwesomeIcon icon={icon} color={'#BBB8C7'} fixedWidth={true} width={iconWidth} />
+                    icon ? <FontAwesomeIcon icon={icon} color={'#ffffff'} fixedWidth={true} width={iconWidth} />
                         :
                         <img src={imgSrc} alt={altText} width={`${iconWidth}px`} />
                 }
             </div>
-            <p className={`bold no--margin white ${isDesktop ? 'fs--14' : 'fs--12'}`}>{title}</p>
+            <p className={`bold no--margin ${isDesktop ? 'fs--14' : 'fs--12'}`}>{title}</p>
         </div>
     )
 }

@@ -40,7 +40,7 @@ export const Header = () => {
                         {headerMenuItems.map((item, index) => (
                             <li
                                 key={index}
-                                className={`${styles.link} ${isMobile ? 'fs--12' : 'fs--18'} ${scrolled ? 'col--secondary' : ''}`
+                                className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'} ${scrolled ? 'col--secondary' : ''}`
                                 }>
                                 <Link href={item.href}>{item.title}</Link>
                             </li>
@@ -49,7 +49,7 @@ export const Header = () => {
                             ?
                             <Button label={'Get in touch'} href={'#contact'} />
                             :
-                            <span className={`${styles.link} ${isMobile ? 'fs--12' : 'fs--18'}`}>
+                            <span className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'}`}>
                                 <a href='#contact'>Contact</a>
                             </span>
                         }
