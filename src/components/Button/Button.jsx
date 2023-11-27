@@ -16,7 +16,7 @@ export const Button = ({
       rel={hasExternalLink ? 'noopener noreferer' : ''}
       {...props}
     >
-      {label}
+      <span className='fs--18'>{label}</span>
     </a>
   );
 };

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Splash = ({ backgroundImg = '' }) => {
     return (
-        <section className={`${styles.splash} ${backgroundImg ? styles.overlay : ''}`}>
+        <section id='skillset' className={`${styles.splash} ${backgroundImg ? styles.overlay : ''}`}>
             {backgroundImg &&
                 <Image src={backgroundImg} fill={true} />
             }

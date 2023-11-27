@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './header.module.scss';
 import Link from "next/link";
 import { Container, Button } from "@/components";
@@ -8,13 +8,24 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { headerMenuItems } from "./MenuItems";
 
 export const Header = () => {
+    const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
 
+    useEffect(() => {
+        window.onscroll = function () {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+    }, []);
+
     return (
-        <div className={`${styles.header} ${isMobile ? styles.mobile : ''}`}>
+        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${isMobile ? styles.mobile : ''}`}>
             <Container variant={'large'} className={styles.container}>
-                <div className={styles.headerLogo}>
+                <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
                     <Link href={'/'}>
                         <img src="/logo.svg" alt={'logo'} />
                     </Link>
@@ -30,12 +41,12 @@ export const Header = () => {
                     }
                     <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
                         {headerMenuItems.map((item, index) => (
-                            <li key={index}>
+                            <li key={index} className='fs--18'>
                                 <Link href={item.href}>{item.title}</Link>
                             </li>
 
                         ))}
-                        <Button label={'Get in touch'} variant={'navButton'} />
+                        <Button label={'Get in touch'} href={'#contact'} />
                     </ul>
                     {isMobile && isMenuOpen === false &&
                         <div onClick={() => setIsMenuOpen(!isMenuOpen)}>

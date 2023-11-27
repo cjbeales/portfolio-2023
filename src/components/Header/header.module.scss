@@ -3,7 +3,19 @@
 
 .header {
   background: $navy;
-  height: $headerDesktop;
+  padding: $space-24 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  transition: padding .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.scrolled {
+  @extend .header;
+  padding: $space-8 0;
+  box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -20,7 +32,16 @@
 
   img,
   a {
+    transition: transform .2s ease-in-out;
     height: 60px;
+  }
+}
+
+.headerLogoScrolled {
+  @extend .headerLogo;
+  
+  img, a {
+    transform: scale(.85)
   }
 }
 
@@ -33,14 +54,33 @@
   padding: 0;
 
   li {
-    line-height: 1;
+    position: relative;
 
     a {
       color: white;
       padding: $space-16 0;
       text-decoration: none;
-      font-family: $font-primary;
       font-weight: 600;
+      font-size: inherit;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $teal;
+      opacity: 0;
+      transition: width .3s ease-in-out, opacity .2s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
     }
   }
 }
