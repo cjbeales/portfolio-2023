@@ -2,15 +2,27 @@
 @import "/src/styles/imports/media-queries";
 
 .skillset {
+
     &__wrapper {
         margin-top: $space-64;
         display: flex;
         align-items: flex-start;
+        position: relative;
 
         @include screen("tablet-and-mobile") {
-            margin-top: $space-48;
+            margin-top: $space-80;
             flex-direction: column;
-            gap: $space-32;
+            gap: $space-16 $space-32;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: -40px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $teal;
         }
     }
 
