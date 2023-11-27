@@ -2,130 +2,23 @@
 @import "@/styles/imports/mixins";
 @import "@/styles/imports/media-queries";
 
-.buttonGroup {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 10px;
-}
-
-.centered {
-  justify-content: center;
-}
-
-.left {
-  justify-content: flex-start;
-}
-
-.right {
-  justify-content: flex-end;
-}
-
-.fullWidth {
-  .button {
-    flex-grow: 1;
-  }
-}
-
 .button {
-  padding: $space-12 $space-48;
-  margin-top: $space-32;
+  background: rgba(255, 255, 255, 0);
+  padding: $space-8 $space-16;
   display: block;
   text-align: center;
   color: white;
   width: fit-content;
-  font-family: $font-secondary;
-  font-size: $body-lg;
   font-weight: 700;
-  border-radius: $radius-sm;
-  border-width: 2px;
+  border-radius: $radius-md;
+  border-width: 1px;
   border-style: solid;
-  border-color: $teal;
+  border-color: whtie;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-  @include screen("laptop") {
-    font-size: $body-md;
-  }
-
-  @include screen("tablet-and-mobile") {
-    font-size: $body-sm;
-    padding: $space-8 $space-24;
-  }
-}
-
-.buttonPrimary {
-  @extend .button;
-  background: $teal;
-
-  @include hover() {
-    background: darken($teal, 8%);
-    border-color: darken($teal, 8%);
-  }
-}
-
-.buttonSecondary {
-  @extend .button;
-  background: $navy;
-  border-color: $navy;
-
-  @include hover() {
-    background: darken($navy, 8%);
-    border-color: darken($navy, 8%);
-  }
-}
-
-.buttonTertiary {
-  @extend .button;
-  background: $tertiary;
-  border-color: $tertiary;
-
-  @include hover() {
-    background: darken($tertiary, 8%);
-    border-color: darken($tertiary, 8%);
-  }
-}
-
-.buttonOutlineWhite {
-  @extend .button;
-  background: rgba(255, 255, 255, 0);
-  border-color: white;
-
-  @include hover() {
+  &:hover {
     background: rgba(255, 255, 255, 0.2);
   }
-}
-
-.smallButton {
-  @extend .button;
-  padding: 0.6em 2.9em;
-}
-
-.navButton {
-  @extend .buttonOutlineWhite;
-  font-size: $body-sm;
-  padding: $space-8 $space-16;
-  margin: 0;
-
-  @include screen("desktop") {
-    padding: $space-16;
-    font-size: $body-md;
-  }
-}
-
-.disabledButton {
-  @extend .button;
-  background: $disabled;
-  color: $type-primary;
-  border-color: $disabled;
-}
-
-.unStyledButton {
-  @extend .button;
-  background: rgba(0, 0, 0, 0);
-  border: 0;
-  padding: 0;
-  margin: 0;
-  color: $type-primary;
 }
