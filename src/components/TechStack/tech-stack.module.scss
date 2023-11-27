@@ -14,16 +14,6 @@
             flex-direction: column;
             gap: $space-16 $space-32;
         }
-
-        &:after {
-            position: absolute;
-            content: '';
-            top: -40px;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: $teal;
-        }
     }
 
     &__column {
@@ -48,7 +38,8 @@
     }
 
     &__tile {
-        background: $lightNavy;
+        // background: $lightNavy;
+        background: rgba($teal, .175);
         display: flex;
         align-self: center;
         justify-content: center;
