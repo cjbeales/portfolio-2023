@@ -30,6 +30,13 @@ a {
   font-weight: $font-weight-bold;
 }
 
+span {
+  a {
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
 // Standards
 h1,
 h2,

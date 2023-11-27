@@ -11,19 +11,16 @@ export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
+    const dynamicScrollValue = isMobile ? 24 : 50;
 
     useEffect(() => {
-        window.onscroll = function () {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
+        window.addEventListener("scroll", () => {
+            setScrolled(window.scrollY >= dynamicScrollValue);
+        });
     }, []);
 
     return (
-        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${isMobile ? styles.mobile : ''}`}>
+        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <Container variant={'large'} className={styles.container}>
                 <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
                     <Link href={'/'}>
@@ -31,7 +28,7 @@ export const Header = () => {
                     </Link>
                 </div>
                 <nav>
-                    {isMenuOpen && isMenuOpen === true &&
+                    {isMobile && isMenuOpen === true &&
                         <div
                             className={styles.close}
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -41,20 +38,28 @@ export const Header = () => {
                     }
                     <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
                         {headerMenuItems.map((item, index) => (
-                            <li key={index} className='fs--18'>
+                            <li
+                                key={index}
+                                className={`${styles.link} ${isMobile ? 'fs--12' : 'fs--18'} ${scrolled ? 'col--secondary' : ''}`
+                                }>
                                 <Link href={item.href}>{item.title}</Link>
                             </li>
-
                         ))}
-                        <Button label={'Get in touch'} href={'#contact'} />
+                        {!isMobile
+                            ?
+                            <Button label={'Get in touch'} href={'#contact'} />
+                            :
+                            <span className={`${styles.link} ${isMobile ? 'fs--12' : 'fs--18'}`}>
+                                <a href='#contact'>Contact</a>
+                            </span>
+                        }
                     </ul>
-                    {isMobile && isMenuOpen === false &&
-                        <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                            <FontAwesomeIcon icon={faBars} color={'white'} />
-                        </div>
-                    }
-
                 </nav>
+                {/* {isMobile && isMenuOpen === false && */}
+                {/* <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <FontAwesomeIcon icon={faBars} color={'white'} fixedWidth={true} width={20} height={20} />
+                </div> */}
+                {/* } */}
             </Container>
         </div>
     );

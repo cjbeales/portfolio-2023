@@ -13,7 +13,7 @@
     z-index: 1;
 
     @include screen("laptop") {
-        height: calc(100vh - $headerDesktop);
+        height: calc(100vh - $headerHeight);
     }
 
     @include screen("desktop") {

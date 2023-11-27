@@ -3,13 +3,20 @@
 
 .header {
   background: $navy;
-  padding: $space-24 0;
-  position: fixed;
+  padding: $space-16 0;
+  position: sticky;
   top: 0;
-  left: 0;
   z-index: 100;
-  width: 100%;
-  transition: padding .2s ease-in-out, box-shadow .2s ease-in-out;
+  transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  @include screen("tablet-and-desktop") {
+    padding: $space-16 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+  }
 }
 
 .scrolled {
@@ -23,6 +30,10 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  
+  @include screen('mobileAll') {
+    padding: 0 $space-16;
+  }
 }
 
 .headerLogo {
@@ -32,33 +43,43 @@
 
   img,
   a {
-    transition: transform .2s ease-in-out;
-    height: 60px;
+    transition: transform 0.2s ease-in-out;
+    height: 30px;
+
+    @include screen("tablet-and-desktop") {
+      height: 60px;
+    }
   }
 }
 
 .headerLogoScrolled {
   @extend .headerLogo;
-  
-  img, a {
-    transform: scale(.85)
+
+  img,
+  a {
+    @include screen("tablet-and-desktop") {
+      transform: scale(0.85);
+    }
   }
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: $space-32;
+  gap: $space-12;
   list-style: none;
   margin: 0;
   padding: 0;
 
-  li {
+  @include screen("tablet-and-desktop") {
+    gap: $space-32;
+  }
+
+  .link {
     position: relative;
 
     a {
       color: white;
-      padding: $space-16 0;
       text-decoration: none;
       font-weight: 600;
       font-size: inherit;
@@ -73,7 +94,11 @@
       height: 2px;
       background: $teal;
       opacity: 0;
-      transition: width .3s ease-in-out, opacity .2s ease-in-out;
+      transition: width 0.3s ease-in-out, opacity 0.2s ease-in-out;
+
+      @include screen("mobileAll") {
+        display: none;
+      }
     }
 
     &:hover {
@@ -82,47 +107,5 @@
         opacity: 1;
       }
     }
-  }
-}
-
-/*--- Mobile styling ---*/
-.header.mobile {
-  height: $headerMobile;
-
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: $headerMobile;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 62px);
-    background: white;
-    opacity: 0;
-    padding-top: $space-96;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.15s;
-    z-index: -1;
-
-    &.navActive {
-      opacity: 1;
-      z-index: 1;
-    }
-  }
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 $space-16;
-  cursor: pointer;
-  z-index: 10;
-  height: $headerMobile;
-  display: flex;
-  align-items: center;
-  @include screen("tablet-and-desktop") {
-    display: none;
   }
 }
