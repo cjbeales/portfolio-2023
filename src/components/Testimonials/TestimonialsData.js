@@ -1,9 +1,9 @@
 export const testimonialsData = [
     {
         clientName: 'Me',
-        clientImg: `/clients/cb.png`,
+        clientImg: `/profile-pic.jpg`,
         content: `Hi everyone! How have you found working with me?`,
-        isBlue: true
+        isBlue: true,
     },
     {
         clientName: 'Paul (P&A Renewable Services)',
