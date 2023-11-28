@@ -7,12 +7,14 @@ export const Testimonials = () => {
     return (
         <section id="testimonials">
             <Container variant='narrow'>
-                <SectionTitle
-                    title={'Client testimonials'}
-                    subContent={`A few words from previous clients and employers.`}
-                    centered={true}
-                    extraSpaceBottom={true}
-                />
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                    <SectionTitle
+                        title={'Client testimonials'}
+                        subContent={`A few words from previous clients and employers.`}
+                        centered={true}
+                        extraSpaceBottom={true}
+                    />
+                </div>
                 {testimonialsData.map(({ clientName, clientImg, content, isBlue }) => (
                     <Bubble clientName={clientName} clientImg={clientImg} content={content} isBlue={isBlue} />
                 ))}

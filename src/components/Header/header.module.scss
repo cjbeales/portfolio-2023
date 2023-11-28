@@ -4,10 +4,15 @@
 .header {
   background: $navy;
   padding: $space-16 0;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
   position: sticky;
   top: 0;
+  opacity: .5;
   z-index: 100;
-  transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
   @include screen("tablet-and-desktop") {
     padding: $space-16 0;
@@ -16,6 +21,7 @@
     left: 0;
     z-index: 100;
     width: 100%;
+    opacity: 1;
   }
 }
 
@@ -23,6 +29,10 @@
   @extend .header;
   padding: $space-8 0;
   box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.2);
+  
+  @include screen("mobileAll") {
+    opacity: .95;
+  }
 }
 
 .container {
@@ -30,8 +40,8 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  
-  @include screen('mobileAll') {
+
+  @include screen("mobileAll") {
     padding: 0 $space-16;
   }
 }

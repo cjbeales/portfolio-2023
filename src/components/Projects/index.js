@@ -11,11 +11,13 @@ export const Projects = () => {
     return (
         <section id="projects" className='dark'>
             <Container variant='large'>
-                <SectionTitle
-                    title={'Projects'}
-                    subContent={`A mixture of commercial, freelance and passion projects.`}
-                    extraSpaceBottom={true}
-                />
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <SectionTitle
+                        title={'Projects'}
+                        subContent={`A mixture of commercial, freelance and passion projects.`}
+                        extraSpaceBottom={true}
+                    />
+                </div>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                 >
@@ -28,6 +30,7 @@ export const Projects = () => {
                                 className={styles.project}
                                 key={title}
                                 id={id}
+                                data-aos="fade-up" data-aos-duration="1000"
                             >
                                 <img
                                     src={image}

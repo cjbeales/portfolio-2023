@@ -6,9 +6,14 @@ export const Bubble = ({ content, isBlue = false, clientName, clientImg }) => {
     const isTablet = useIsTablet();
     const isDesktop = useIsDesktop();
     const fontSizeSelector = isDesktop ? 'fs--18' : isTablet ? 'fs--16' : 'fs--14';
-    
+
     return (
-        <div className={isBlue ? styles.wrapper__reversed : styles.wrapper}>
+        <div
+            className={isBlue ? styles.wrapper__reversed : styles.wrapper}
+            data-aos={isBlue ? "fade-left" : "fade-right"} 
+            data-aos-duration="1000" 
+            data-aos-delay="500"
+        >
             <div className={isBlue ? styles.name__reversed : styles.name}>
                 <p className={`no--margin ${fontSizeSelector}`}>{clientName}</p>
             </div>
