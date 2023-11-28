@@ -1,6 +1,6 @@
 ## Hi, I'm Connor and welcome to my Web Portfolio!
 
-# Getting Started
+Getting Started:
 
 Follow threse steps to get started:
 1. Download or clone the repo
