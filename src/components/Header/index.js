@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Container, Button } from "@/components";
 import { useIsMobile } from "@/hooks";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { headerMenuItems } from "./MenuItems";
 
 export const Header = () => {
@@ -20,46 +19,35 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`} data-aos="fade" data-aos-duration="1000">
+        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <Container variant={'large'} className={styles.container}>
-                <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
-                    <Link href={'/'}>
-                        <img src="/logo.svg" alt={'logo'} />
-                    </Link>
-                </div>
-                <nav>
-                    {isMobile && isMenuOpen === true &&
-                        <div
-                            className={styles.close}
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        >
-                            <FontAwesomeIcon icon={faXmark} size={'lg'} color={'white'} />
-                        </div>
-                    }
-                    <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
-                        {headerMenuItems.map((item, index) => (
-                            <li
-                                key={index}
-                                className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'} ${scrolled ? 'col--secondary' : ''}`
-                                }>
-                                <Link href={item.href}>{item.title}</Link>
-                            </li>
-                        ))}
-                        {!isMobile
-                            ?
-                            <Button label={'Get in touch'} href={'#contact'} />
-                            :
-                            <span className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'}`}>
-                                <a href='#contact'>Contact</a>
-                            </span>
-                        }
-                    </ul>
-                </nav>
-                {/* {isMobile && isMenuOpen === false && */}
-                {/* <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    <FontAwesomeIcon icon={faBars} color={'white'} fixedWidth={true} width={20} height={20} />
-                </div> */}
-                {/* } */}
+                {/* <div data-aos="fade" data-aos-duration="1000"> */}
+                    <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
+                        <Link href={'/'}>
+                            <img src="/logo.svg" alt={'logo'} />
+                        </Link>
+                    </div>
+                    <nav>
+                        <ul className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
+                            {headerMenuItems.map((item, index) => (
+                                <li
+                                    key={index}
+                                    className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'} ${scrolled ? 'col--secondary' : ''}`
+                                    }>
+                                    <Link href={item.href}>{item.title}</Link>
+                                </li>
+                            ))}
+                            {!isMobile
+                                ?
+                                <Button label={'Get in touch'} href={'#contact'} />
+                                :
+                                <span className={`${styles.link} ${isMobile ? 'fs--14' : 'fs--18'}`}>
+                                    <a href='#contact'>Contact</a>
+                                </span>
+                            }
+                        </ul>
+                    </nav>
+                {/* </div> */}
             </Container>
         </div>
     );

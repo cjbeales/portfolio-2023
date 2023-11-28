@@ -7,7 +7,7 @@ export const Testimonials = () => {
     return (
         <section id="testimonials">
             <Container variant='narrow'>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
                     <SectionTitle
                         title={'Client testimonials'}
                         subContent={`A few words from previous clients and employers.`}

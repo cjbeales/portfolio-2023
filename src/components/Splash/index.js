@@ -1,15 +1,11 @@
 import React from 'react';
 import styles from './splash.module.scss';
 import { Container, TechStack } from '@/components';
-import Image from 'next/image';
 
-export const Splash = ({ backgroundImg = '' }) => {
+export const Splash = () => {
     return (
-        <section id='skillset' className={`${styles.splash} ${backgroundImg ? styles.overlay : ''}`}>
-            {backgroundImg &&
-                <Image src={backgroundImg} fill={true} />
-            }
-            <Container variant='large'>
+        <section id='skillset' className={styles.splash}>
+            <Container variant='large' className={styles.splash__container}>
                 <h1
                     className='margin--16 white'
                     data-aos="fade-up"

@@ -18,6 +18,7 @@ body {
 section {
   background: $navy;
   padding: $space-64 0;
+  overflow: hidden;
 
   @include screen("tablet-and-desktop") {
     padding: $space-80 0;
