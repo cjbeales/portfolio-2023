@@ -68,13 +68,13 @@
         background-image: url("/bubble-point-white.svg");
         background-size: contain;
         position: absolute;
-        width: 27px;
+        width: 26px;
         height: 30px;
         bottom: -4px;
         left: -9px;
 
         @include screen("tablet-and-desktop") {
-            width: 40px;
+            width: 39px;
             height: 45px;
             bottom: -8px;
             left: -14px;
@@ -121,5 +121,15 @@
     img {
         object-fit: contain;
         width: 100%;
+    }
+}
+
+.profileImage {
+    @extend .image;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    img {
+        object-fit: cover;
+        border-radius: 50%;
     }
 }

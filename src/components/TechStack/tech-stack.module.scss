@@ -6,14 +6,10 @@
     &__wrapper {
         margin-top: $space-64;
         display: flex;
+        flex-direction: column;
+        gap: $space-16 0;
         align-items: flex-start;
         position: relative;
-
-        @include screen("tablet-and-mobile") {
-            margin-top: $space-64;
-            flex-direction: column;
-            gap: $space-16 $space-32;
-        }
     }
 
     &__column {
