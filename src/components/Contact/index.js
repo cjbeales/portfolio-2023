@@ -8,10 +8,21 @@ export const ContactSection = () => {
     return (
         <section id="contact" className="dark">
             <Container variant="large">
-                <SectionTitle title={'Say hi'} subContent={`Don’t be shy, get in touch and let’s have a chat!`} />
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <SectionTitle title={'Say hi'} subContent={`Don’t be shy, get in touch and let’s have a chat!`} />
+                </div>
                 <div className={styles.contactGrid}>
                     {contactData.map(({ title, linkText, linkHref, icon }) => (
-                        <ContactItem icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
+                        <div
+                            data-aos="fade-right"
+                            // data-aos-delay="1000"
+                            data-aos-duration="1000"
+                        >
+                            <ContactItem icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
+                        </div>
                     ))}
                 </div>
             </Container>
