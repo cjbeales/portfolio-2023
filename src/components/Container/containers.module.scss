@@ -1,5 +1,4 @@
 @import "/src/styles/imports/theme";
-@import "/src/styles/imports/mixins";
 @import "/src/styles/imports/media-queries";
 
 .container {
@@ -19,11 +18,6 @@
   padding: 0;
 }
 
-.large {
-  @extend .container;
-  max-width: 1680px;
-}
-
 .standard {
   @extend .container;
   max-width: 1200px;
@@ -35,9 +29,4 @@
 .narrow {
   @extend .container;
   max-width: 960px;
-}
-
-.copy {
-  @extend .container;
-  max-width: 720px;
 }

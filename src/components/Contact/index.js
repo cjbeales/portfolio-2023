@@ -12,11 +12,11 @@ export const ContactSection = () => {
                     data-aos="fade-up"
                     data-aos-duration="1000"
                 >
-                    <SectionTitle title={'Say hi'} subContent={`Don’t be shy, get in touch and let’s have a chat!`} />
+                    <SectionTitle title={'Say hi'} subContent={`I'd love to hear from you, let’s have a chat!`} />
                 </div>
                 <div className={styles.contactGrid}>
                     {contactData.map(({ title, linkText, linkHref, icon }) => (
-                        <ContactItem icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
+                        <ContactItem key={title} icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
                     ))}
                 </div>
             </Container>

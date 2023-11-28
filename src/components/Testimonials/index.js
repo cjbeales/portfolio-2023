@@ -16,7 +16,7 @@ export const Testimonials = () => {
                     />
                 </div>
                 {testimonialsData.map(({ clientName, clientImg, content, isBlue }) => (
-                    <Bubble clientName={clientName} clientImg={clientImg} content={content} isBlue={isBlue} />
+                    <Bubble key={clientName} clientName={clientName} clientImg={clientImg} content={content} isBlue={isBlue} />
                 ))}
             </Container>
         </section>
