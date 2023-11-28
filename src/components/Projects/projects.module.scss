@@ -80,14 +80,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
     height: auto;
-    padding: $space-16;
+    padding: $space-12;
     transition: transform 0.3s ease-in-out;
     z-index: 3;
 
     @include screen("desktopAll") {
         transform: translateY(105%);
+        padding: $space-16;
     }
 }
 

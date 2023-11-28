@@ -4,6 +4,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ProjectList } from './ProjectList';
 import { Container, SectionTitle } from '@/components';
 import { useIsMobile } from "@/hooks";
+import Image from 'next/image';
 
 export const Projects = () => {
     const isMobile = useIsMobile;
@@ -32,12 +33,17 @@ export const Projects = () => {
                                 id={id}
                                 data-aos="fade-up" data-aos-duration="1000"
                             >
-                                <img
+                                <Image
                                     src={image}
+                                    alt={title}
                                     className={`${styles.project__thumbnail} ${halfSize ? styles.halfSize : ''}`}
+                                    width={523}
+                                    height={halfSize ? 310 : 615}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1445px) 365px,  562px"
+                                    quality={90}
                                 />
                                 <div className={styles.contentBox}>
-                                    <h4 className={`white ${!isMobile ? 'margin--8' : 'no--margin'}`}>{title}</h4>
+                                    <h4 className={`white ${!isMobile ? 'margin--8' : 'margin--4'}`}>{title}</h4>
                                     <p className={'body--sm white margin--16'}>{description}</p>
                                     <div className={styles.techGroup}>
                                         {tech?.map((item, i) => (
