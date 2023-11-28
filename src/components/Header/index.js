@@ -20,7 +20,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+        <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`} data-aos="fade" data-aos-duration="1000">
             <Container variant={'large'} className={styles.container}>
                 <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
                     <Link href={'/'}>
