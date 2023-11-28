@@ -37,7 +37,7 @@ export const ProjectList = [
         title: 'Carlson Gracie Hull',
         id: 4,
         description: `Design concept for a top UK BJJ acedemy.`,
-        href: '/projects/carlson-gracie',
+        href: 'https://www.instagram.com/p/Cn4x6Tnj1j7/?img_index=1',
         image: '/projects/carlson-gracie.jpg',
         tech: ['Figma', 'Photoshop'],
     },
