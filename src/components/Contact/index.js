@@ -16,7 +16,7 @@ export const ContactSection = () => {
                 </div>
                 <div className={styles.contactGrid}>
                     {contactData.map(({ title, linkText, linkHref, icon }) => (
-                        <ContactItem icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
+                        <ContactItem key={title} icon={icon} title={title} linkText={linkText} linkHref={linkHref} />
                     ))}
                 </div>
             </Container>

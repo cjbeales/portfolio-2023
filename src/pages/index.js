@@ -1,6 +1,5 @@
 import React from 'react';
-import { Splash, Projects, Testimonials, ContactSection } from '@/components';
-import { Layout } from '@/components';
+import { Splash, Projects, Testimonials, ContactSection, Layout } from '@/components';
 
 const Home = () => {
   return (
