@@ -19,7 +19,7 @@ export const Header = () => {
 
     return (
         <div className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-            <Container variant={'large'} className={styles.container}>
+            <Container variant={'standard'} className={styles.container}>
                 <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
                     <Link href={'#skillset'}>
                         <img src="/logo.svg" alt={'logo'} />

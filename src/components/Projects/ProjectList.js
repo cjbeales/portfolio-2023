@@ -8,13 +8,13 @@ export const ProjectList = [
         tech: ['React', 'NextJS', 'SCSS', 'Contentful']
     },
     {
-        title: 'Watch Collecting',
-        id: 1,
-        description: `Market disrupting online auction platform for watches.`,
-        href: 'https://watchcollecting.com',
-        image: '/projects/watch-collecting.jpg',
-        tech: ['React', 'NextJS', 'SCSS', 'Contentful'],
-        halfSize: true
+        title: 'Performance Energy',
+        id: 5,
+        description: `A new look for a recruitment market-leader.`,
+        href: 'https://performance-energy.com/',
+        image: '/projects/performance-energy.jpg',
+        tech: ['React', 'Gatsby', 'GraphQL', 'SCSS', 'Prismic'],
+        halfSize: true,
     },
     {
         title: 'Adam & Eve Hair',
@@ -42,12 +42,12 @@ export const ProjectList = [
         tech: ['Figma', 'Photoshop'],
     },
     {
-        title: 'PSN Storefront',
-        id: 5,
-        description: `Design concept for an new-look PSN storefront.`,
-        href: '/projects/psn-storefront',
-        image: '/projects/psn-storefront.jpg',
-        tech: ['Figma', 'Photoshop'],
-        halfSize: true,
+        title: 'Watch Collecting',
+        id: 1,
+        description: `Market disrupting online auction platform for watches.`,
+        href: 'https://watchcollecting.com',
+        image: '/projects/watch-collecting.jpg',
+        tech: ['React', 'NextJS', 'SCSS', 'Contentful'],
+        halfSize: true
     },
 ]

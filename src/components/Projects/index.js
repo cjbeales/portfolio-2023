@@ -10,7 +10,7 @@ export const Projects = () => {
 
     return (
         <section id="projects" className='dark'>
-            <Container variant='large'>
+            <Container variant='standard'>
                 <div data-aos="fade-up" data-aos-duration="1000">
                     <SectionTitle
                         title={'Projects'}
@@ -19,7 +19,7 @@ export const Projects = () => {
                     />
                 </div>
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+                    columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3 }}
                 >
                     <Masonry gutter={!isMobile ? "32px" : "24px"}>
                         {ProjectList.map(({ image, title, description, halfSize, tech, id, href }) => (

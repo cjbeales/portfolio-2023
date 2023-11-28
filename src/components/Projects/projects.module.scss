@@ -6,7 +6,6 @@
     overflow: hidden;
     position: relative;
     border-radius: $space-8;
-    // border: 1px solid #183666;
     z-index: 1;
     cursor: pointer;
 
@@ -51,25 +50,29 @@
         object-fit: cover;
         object-position: top;
         border-radius: $space-8;
-        height: 300px;
+        height: 305px;
         transition: transform 0.4s ease-in-out;
 
         @include screen('tablet-and-desktop') {
             border-radius: $space-16;
         }
 
-        @include screen("desktopAll") {
-            min-height: 70vh;
+        @include screen("laptop") {
+            height: 410px;
+        }
+
+        @include screen("desktop") {
+            height: 610px;
         }
     }
 }
 
 .halfSize {
-    height: 300px;
+    height: 305px;
     min-height: 0;
 
-    @include screen("desktopAll") {
-        max-height: 40vh;
+    @include screen("laptop") {
+        height: 210px;
     }
 }
 

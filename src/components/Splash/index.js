@@ -5,7 +5,7 @@ import { Container, TechStack } from '@/components';
 export const Splash = () => {
     return (
         <section id='skillset' className={styles.splash}>
-            <Container variant='large' className={styles.splash__container}>
+            <Container variant='standard' className={styles.splash__container}>
                 <h1
                     className='margin--16 white'
                     data-aos="fade-up"
