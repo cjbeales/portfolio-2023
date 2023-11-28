@@ -20,12 +20,12 @@ export const techStackData = [
     },
     {
         title: 'NextJS',
-        imgSrc: '/nextjs_logo.svg',
+        imgSrc: '/nextjs_logo-white.svg',
         iconWidth: 35
     },
     {
         title: 'Gatsby',
-        imgSrc: '/gatsby_logo.svg',
+        imgSrc: '/gatsby_logo-white.svg',
         iconWidth: 35
     },
     {
@@ -46,12 +46,12 @@ export const techStackData = [
     },
     {
         title: 'Prismic',
-        imgSrc: '/prismic_logo.svg',
+        imgSrc: '/prismic_logo-white.svg',
         iconWidth: 35
     },
     {
         title: 'Contentful',
-        imgSrc: '/contentful_logo.svg',
+        imgSrc: '/contentful_logo-white.svg',
         iconWidth: 35
     },
 ];

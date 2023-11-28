@@ -1,4 +1,3 @@
-export { About } from './About'
 export { Button } from './Button'
 export { ContactSection } from './Contact';
 export { Container } from './Container';
