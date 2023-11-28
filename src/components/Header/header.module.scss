@@ -128,6 +128,12 @@
 .linkButton {
   @extend .link;
   @extend .button;
+  padding: $space-4 $space-8;
+  
+  &:after {
+    display: none;
+  }
+  
   @include screen("tablet-and-mobile") {
     padding: 0;
     border: 0;
