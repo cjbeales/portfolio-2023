@@ -7,7 +7,7 @@ import { contactData } from "./contactData"
 export const ContactSection = () => {
     return (
         <section id="contact" className="dark">
-            <Container variant="large">
+            <Container variant="standard">
                 <div
                     data-aos="fade-up"
                     data-aos-duration="1000"
