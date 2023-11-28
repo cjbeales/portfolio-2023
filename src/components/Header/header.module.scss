@@ -1,5 +1,6 @@
 @import "/src/styles/imports/theme";
 @import "/src/styles/imports/media-queries";
+@import "/src/components/Button/button.module.scss";
 
 .header {
   background: $navy;
@@ -10,18 +11,18 @@
   position: -ms-sticky;
   position: sticky;
   top: 0;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 100;
   transition: padding 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
-  @include screen("tablet-and-desktop") {
+  @include screen("desktopAll") {
     padding: $space-16 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    opacity: 1;
+    // opacity: 1;
   }
 }
 
@@ -29,9 +30,9 @@
   @extend .header;
   padding: $space-8 0;
   box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.2);
-  
-  @include screen("mobileAll") {
-    opacity: .95;
+
+  opacity: 0.95;
+  @include screen("tablet-and-mobile") {
   }
 }
 
@@ -41,7 +42,7 @@
   justify-content: space-between;
   height: 100%;
 
-  @include screen("mobileAll") {
+  @include screen("tablet-and-mobile") {
     padding: 0 $space-16;
   }
 }
@@ -56,7 +57,11 @@
     transition: transform 0.2s ease-in-out;
     height: 30px;
 
-    @include screen("tablet-and-desktop") {
+    @include screen("tablet") {
+      height: 45px;
+    }
+
+    @include screen("desktopAll") {
       height: 60px;
     }
   }
@@ -81,7 +86,7 @@
   margin: 0;
   padding: 0;
 
-  @include screen("tablet-and-desktop") {
+  @include screen("desktopAll") {
     gap: $space-32;
   }
 
@@ -106,7 +111,7 @@
       opacity: 0;
       transition: width 0.3s ease-in-out, opacity 0.2s ease-in-out;
 
-      @include screen("mobileAll") {
+      @include screen("tablet-and-mobile") {
         display: none;
       }
     }
@@ -117,5 +122,14 @@
         opacity: 1;
       }
     }
+  }
+}
+
+.linkButton {
+  @extend .link;
+  @extend .button;
+  @include screen("tablet-and-mobile") {
+    padding: 0;
+    border: 0;
   }
 }

@@ -10,5 +10,10 @@ export const headerMenuItems = [
     {
         title: 'Testimonials',
         href: '#testimonials'
+    },
+    {
+        title: 'Contact',
+        href: '#contact',
+        isButton: true
     }
 ];
