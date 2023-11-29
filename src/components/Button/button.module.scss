@@ -21,3 +21,13 @@
     background: rgba(255, 255, 255, 0.15);
   }
 }
+
+.backButton {
+  @extend .button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-8;
+  padding: $space-12 $space-16;
+  width: fit-content;
+}

@@ -19,7 +19,7 @@ export const Splash = () => {
                     data-aos-delay="1000"
                     data-aos-duration="1000"
                 >
-                    I&apos;m a front end engineer who specializes in modern <span className="teal">clean design</span> and elegant <span className="teal">performance-driven</span> code.
+                    I&apos;m a Frontend Engineer who specializes in elegant <span className="teal">performance-driven</span> code and <span className="teal">clean designs</span>.
                 </p>
                 <TechStack />
             </Container>
