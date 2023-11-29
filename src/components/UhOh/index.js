@@ -14,7 +14,7 @@ export const UhOh = () => {
           <h1 className='margin--8 white'>Uh-oh!</h1>
           <p className='margin--48'>Looks like you're a little lost...</p>
           <Link href={'/'} className={buttonStyles.backButton}>
-          <FontAwesomeIcon icon={faArrowLeft} color={'white'} fixedWidth={true} width={26} />
+          <FontAwesomeIcon icon={faArrowLeft} color={'white'} fixedWidth={true} width={18} />
             <span className='white fs--18'>Back to safety</span>
           </Link>
         </div>
