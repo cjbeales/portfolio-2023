@@ -11,7 +11,7 @@ export const TechStack = () => {
             <p className={`no--margin bold ${isMobile ? 'fs--16' : 'fs--18'}`}>Tech stack</p>
             <div className={styles.skillset__column}>
                 {techStackData.map(({ title, icon, iconWidth, imgSrc }) => (
-                    <Tile key={title} title={title} icon={icon} iconWidth={iconWidth} imgSrc={imgSrc} />
+                    <Tile key={title} title={title} altText={title} icon={icon} iconWidth={iconWidth} imgSrc={imgSrc} />
                 ))}
             </div>
         </div>

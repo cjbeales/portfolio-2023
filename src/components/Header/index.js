@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components";
 import { useIsMobile, useIsDesktop } from "@/hooks";
 import { headerMenuItems } from "./MenuItems";
+import Image from 'next/image';
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -22,7 +23,7 @@ export const Header = () => {
             <Container variant={'standard'} className={styles.container}>
                 <div className={scrolled ? styles.headerLogoScrolled : styles.headerLogo}>
                     <Link href={'#skillset'}>
-                        <img src="/logo.svg" alt={'logo'} />
+                        <Image src={"/logo.svg"} alt={'CB Logo'} width={60} height={60} />
                     </Link>
                 </div>
                 <nav>

@@ -4,7 +4,7 @@ export const ProjectList = [
         id: 0,
         description: `Europe's largest supercar online auction platform.`,
         href: 'https://collectingcars.com',
-        image: '/projects/collecting-cars.jpg',
+        image: '/projects/collecting-cars.webp',
         tech: ['React', 'NextJS', 'SCSS', 'Contentful']
     },
     {
@@ -12,7 +12,7 @@ export const ProjectList = [
         id: 5,
         description: `A new look for a recruitment market-leader.`,
         href: 'https://performance-energy.com/',
-        image: '/projects/performance-energy.jpg',
+        image: '/projects/performance-energy.webp',
         tech: ['React', 'Gatsby', 'GraphQL', 'SCSS', 'Prismic'],
         halfSize: true,
     },
@@ -21,7 +21,7 @@ export const ProjectList = [
         id: 2,
         description: `A modern website for a successful local hair salon.`,
         href: 'https://adamandevehair.co.uk',
-        image: '/projects/adam-and-eve.jpg',
+        image: '/projects/adam-and-eve.webp',
         tech: ['Wordpress', 'Javascript', 'SCSS'],
     },
     {
@@ -29,7 +29,7 @@ export const ProjectList = [
         id: 3,
         description: `Wind turbine maintenance has never looked so good.`,
         href: 'https://www.pa-renewableservices.com/',
-        image: '/projects/pa-renewables.jpg',
+        image: '/projects/pa-renewables.webp',
         tech: ['HTML', 'SCSS', 'Javascript'],
         halfSize: true
     },
@@ -38,7 +38,7 @@ export const ProjectList = [
         id: 4,
         description: `Design concept for a top UK BJJ acedemy.`,
         href: 'https://www.instagram.com/p/Cn4x6Tnj1j7/?img_index=1',
-        image: '/projects/carlson-gracie.jpg',
+        image: '/projects/carlson-gracie.webp',
         tech: ['Figma', 'Photoshop'],
     },
     {
@@ -46,7 +46,7 @@ export const ProjectList = [
         id: 1,
         description: `Market disrupting online auction platform for watches.`,
         href: 'https://watchcollecting.com',
-        image: '/projects/watch-collecting.jpg',
+        image: '/projects/watch-collecting.webp',
         tech: ['React', 'NextJS', 'SCSS', 'Contentful'],
         halfSize: true
     },
