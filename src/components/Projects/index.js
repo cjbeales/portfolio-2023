@@ -44,7 +44,7 @@ export const Projects = () => {
                                 />
                                 <div className={styles.contentBox}>
                                     <h4 className={`white ${!isMobile ? 'margin--8' : 'margin--4'}`}>{title}</h4>
-                                    <p className={'body--sm white margin--16'}>{description}</p>
+                                    <p className={`white margin--16 fs--16`}>{description}</p>
                                     <div className={styles.techGroup}>
                                         {tech?.map((item, i) => (
                                             <div key={i} className={`${styles.pill} no--margin fs--14 white`}><span>{item}</span></div>

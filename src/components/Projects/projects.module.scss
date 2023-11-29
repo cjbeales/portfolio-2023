@@ -8,10 +8,10 @@
     z-index: 1;
     cursor: pointer;
 
-@include screen('tablet-and-desktop') {
-    border: 2px solid #183666;
-    border-radius: $space-16;
-}
+    @include screen("tablet-and-desktop") {
+        border: 2px solid #183666;
+        border-radius: $space-16;
+    }
 
     &:after {
         position: absolute;
@@ -52,12 +52,12 @@
         height: 305px;
         transition: transform 0.4s ease-in-out;
 
-        @include screen('tablet-and-desktop') {
+        @include screen("tablet-and-desktop") {
             border-radius: $space-16;
         }
 
         @include screen("laptop") {
-            height: 410px;
+            height: 460px;
         }
 
         @include screen("desktop") {
@@ -71,7 +71,7 @@
     min-height: 0;
 
     @include screen("laptop") {
-        height: 210px;
+        height: 250px;
     }
 }
 
@@ -84,9 +84,12 @@
     transition: transform 0.3s ease-in-out;
     z-index: 3;
 
+    @include screen("desktop") {
+        padding: $space-16;
+    }
+
     @include screen("desktopAll") {
         transform: translateY(105%);
-        padding: $space-16;
     }
 }
 
@@ -103,7 +106,8 @@
     border-radius: 20px;
     border: 1px solid white;
     background: rgba(0, 0, 0, 0.15);
-    @include screen("desktopAll") {
+
+    @include screen("desktop") {
         padding: 6px $space-16;
     }
 }
