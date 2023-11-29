@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { Header } from '@/components';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, navVisible = true }) => {
     const title = `Connor Beales | Frontend Engineeer | Web Portfolio`;
     const description = `Hi, I'm Connor Beales and welcome to my portfolio! I'm a Frontend Engineer based in Hampshire, UK.`;
     const ogImagePath = `/og-image.jpg`;
@@ -28,7 +28,9 @@ export const Layout = ({ children }) => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             </Head>
             <main>
-                <Header />
+                {navVisible &&
+                    <Header />
+                }
                 {children}
             </main>
         </>
