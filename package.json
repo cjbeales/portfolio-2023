@@ -2,6 +2,13 @@
   "name": "portfolio-2023",
   "version": "0.1.0",
   "private": true,
+  "description": "Hi, I'm Connor Beales and welcome to my portfolio! I'm a Frontend Engineer based in Hampshire, UK.",
+	"keywords": ["frontend", "engineer", "web", "portfolio"],
+	"author": "Connor Beales",
+	"contributors": [{
+		"name": "Connor Beales",
+		"email": "connorj.beales@gmail.com"
+	}],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
