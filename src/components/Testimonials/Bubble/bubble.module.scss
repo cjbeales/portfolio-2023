@@ -31,19 +31,19 @@
 }
 
 .name {
-    margin: 0 0 $space-8 42px;
+    margin: 0 0 $space-8 47px;
     width: fit-content;
 
     @include screen("tablet-and-desktop") {
-        margin: 0 0 $space-8 $space-48;
+        margin: 0 0 $space-8 51px;
     }
 
     &__reversed {
         text-align: right;
-        margin: 0 42px $space-8 0;
+        margin: 0 47px $space-8 0;
 
         @include screen("tablet-and-desktop") {
-            margin: 0 $space-48 $space-8 0;
+            margin: 0 51px $space-8 0;
         }
     }
 }

@@ -8,3 +8,4 @@ export { SectionTitle } from './SectionTitle';
 export { Splash } from './Splash/index';
 export { TechStack } from './TechStack';
 export { Testimonials } from './Testimonials';
+export { UhOh } from './UhOh'
